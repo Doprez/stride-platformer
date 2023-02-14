@@ -1,0 +1,20 @@
+!SceneAsset
+Id: 13f02402-0e3f-407f-abc0-efefdf4eba25
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 0c8b5da0-bec1-403b-aa9f-1f82f0723334
+    Parts:
+        -   Entity:
+                Id: 0c8b5da0-bec1-403b-aa9f-1f82f0723334
+                Name: WorldManager
+                Components:
+                    45d050e6c5bd18074c12f64490268c7d: !TransformComponent
+                        Id: 36aa49dc-d5d8-4e2e-a326-9e6fa24b0cc1
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}

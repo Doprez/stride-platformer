@@ -1,0 +1,68 @@
+!Skeleton
+Id: c4dd32cc-fe93-4d09-9bb4-c6bd36cfd60d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/stride-bot.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.3
+Nodes:
+    8f06627008df7dbc72b2855b8d4455b2: {Name: RootNode, Depth: 0}
+    06bec3eaa016c761723512b37ecd770c: {Name: Head, Depth: 1}
+    8afef78a6ebb3976679c57c8c1560675: {Name: Light, Depth: 1}
+    f927a5c42cb56374af81cc3e19ac88c7: {Name: Camera, Depth: 1}
+    455b43fd00197e667ac6c5fec58c023f: {Name: EyeScreen, Depth: 1}
+    ac0f2ea2d983219a579edaf09a2b2123: {Name: Neck, Depth: 1}
+    878eb851600cb8d99479dec41f9a13e4: {Name: Torso_1, Depth: 1}
+    73d9d2d487b3c3b5c0983eaeae5e6b7f: {Name: ShoulderLeft_1, Depth: 1}
+    2bad26848dcd8011d26f8f92c24cf51e: {Name: Sphere.001, Depth: 1}
+    d4bdc20436f9fd3299459cd1f430949e: {Name: ShoulderJointLeft, Depth: 1}
+    2d139a8c5da808b2bea4a526c6a2c366: {Name: BicepLeft_1, Depth: 1}
+    50a05634b11f905ef79286510ada5f30: {Name: ElbowLeft, Depth: 1}
+    889d1d25e44c2e78af8c6016e4ae4770: {Name: ForearmLeft_1, Depth: 1}
+    d54aec15e178cb34e4fdaa1ede0554e9: {Name: WristLeft_1, Depth: 1}
+    1b4c20e5ad48c9282af4c4c140ac7fb9: {Name: ClawHandLeft, Depth: 1}
+    375718221a0ce40f445e9b5527a811d4: {Name: ClawHandRight, Depth: 1}
+    2b8ae62d5af7213e2f58df631708373f: {Name: ShoulderJointRight, Depth: 1}
+    79ce880b4291a6609414837d35de3bde: {Name: BicepRight_1, Depth: 1}
+    38e96dc3459da5111fe89a0718c1cba3: {Name: ShoulderRight_1, Depth: 1}
+    7899ead17cb7aada17aea3aac0fc723e: {Name: Sphere.008, Depth: 1}
+    a4a99f5eaa8a4d36589129191ae84a42: {Name: ElbowRight, Depth: 1}
+    4de9c369bb865c34164548c605ec054b: {Name: ForearmRight_1, Depth: 1}
+    c02ed59eca20bf6d5c5a50baba0a05e4: {Name: WristRight_1, Depth: 1}
+    29ca3dc85660074cbaf863b6fe1c0d94: {Name: WheelRight_1, Depth: 1}
+    81b20ad6bb835c10c130ec7f76e36842: {Name: WheelLeft_1, Depth: 1}
+    61cd57ffe9f0c08821b635db5e8d6703: {Name: Cylinder.007, Depth: 1}
+    effa21489f793dac35c960713de06109: {Name: Cylinder.008, Depth: 1}
+    bacf8ffc3b8e64a8ab7f57c2e985e12b: {Name: Armature, Depth: 1}
+    af685696d768196e2dc28e6010bb20b6: {Name: Bone, Depth: 2}
+    e572c918cec27fee111c1e9374dfccad: {Name: Torso_2, Depth: 3}
+    ecb37fe3f07982f083d7911cfa028524: {Name: Bone.002, Depth: 4}
+    39ef3b5fdbb21af4d10daf31b9f6cd2f: {Name: ShoulderLeft_2, Depth: 5}
+    9c9468b57a2b2f01533209bffef9d578: {Name: BicepLeft_2, Depth: 6}
+    3b8f22188afd2920ced48cf8dfce83ac: {Name: ForearmLeft_2, Depth: 7}
+    9b479a5cd617bfe59f566733514617d1: {Name: WristLeft_2, Depth: 8}
+    708adb2e3c8f4f6065e0eeb0434de5ac: {Name: ClawJoint01Left, Depth: 9}
+    551c9fd146353718999e3b76273e43ea: {Name: ClawJoint02Left, Depth: 10}
+    a9eda6839d3bf294e39cbd67bfa80982: {Name: ClawJoint02Left_end, Depth: 11}
+    38014f9171fb9d2acfea2530ccd39b4f: {Name: ClawJoint03Left, Depth: 9}
+    28bda819a4b59c6f8e2e528e91b5b4f1: {Name: ClawJoint04Left, Depth: 10}
+    8d4a99bbbd0dc71a7308b6140254dde9: {Name: ClawJoint04Left_end, Depth: 11}
+    7e776ab210eb0c215338be3de1cdb6b6: {Name: Bone.011, Depth: 4}
+    dc10b8d73b28d3d5c424aa28aac7cf1d: {Name: ShoulderRight_2, Depth: 5}
+    13dfc2ddea8d0dfb97ebecff416c5baa: {Name: BicepRight_2, Depth: 6}
+    f06d1ca4dc3e4cb258251a46c8079670: {Name: ForearmRight_2, Depth: 7}
+    cac0f8030aecd2d7e35d18eba0f0db0a: {Name: WristRight_2, Depth: 8}
+    6f3f4f670f032e3622a4a241ee779683: {Name: ClawJoint03Right, Depth: 9}
+    9b9a0adf77f41e7150cc2a5052cc8307: {Name: ClawJoint04Right, Depth: 10}
+    eb151607de4bd25a9eb2136f4ca1e7d0: {Name: ClawJoint04Right_end, Depth: 11}
+    79661757f939983ec593b8b125345e98: {Name: ClawJoint01Right, Depth: 9}
+    af895b01716a9aa499a5078d3c08dfcc: {Name: ClawJoint02Right, Depth: 10}
+    d39174868f869d4a923a7bcc5f7f16aa: {Name: ClawJoint02Right_end, Depth: 11}
+    632a901d899b54865492d832099d5271: {Name: NeckHead, Depth: 4}
+    4e8648d09f86d979187dfb462a500913: {Name: NeckHead_end, Depth: 5}
+    90cc4e0c4f77808bb8e5f49a347cab0a: {Name: WheelLeft_2, Depth: 3}
+    d0a8aa0c193474b1b5a98e2d2edb00af: {Name: WheelLeft_end, Depth: 4}
+    d77800d80aeb00a78a323981b1007c60: {Name: WheelRight_2, Depth: 3}
+    2302afef422c3e6ac005e3865e97292f: {Name: WheelRight_end, Depth: 4}
+~SourceHashes:
+    245a07b551a32f6b4ce8d61c39f5078c~../../../Resources/Model/stride-bot.fbx: 7f3532e99f3ed0d840f46eb31667e751

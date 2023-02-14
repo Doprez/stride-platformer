@@ -1,0 +1,19 @@
+!Animation
+Id: 5df41521-bafa-49f0-aeda-d2401286bdc9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Animations/StrideBot/stride-bot_Walk.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: PlayOnceHold
+Type: !StandardAnimationAssetType {}
+Skeleton: c4dd32cc-fe93-4d09-9bb4-c6bd36cfd60d:Models/StrideBot/stride-bot Skeleton
+RootMotion: false
+PreviewModel: d9160e1a-02ea-40a1-b76a-9c36c51d621d:Models/StrideBot/stride-bot
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:00.3750000
+~SourceHashes:
+    199f03a6762944e79f0264b8e2218e85~../../../Resources/Animations/StrideBot/stride-bot_Walk.fbx: b97b6754f37ce77cfef02f67469f118e

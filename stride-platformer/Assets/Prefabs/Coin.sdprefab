@@ -1,0 +1,58 @@
+!PrefabAsset
+Id: 93b199c8-a55c-4c96-9da8-6b1f43a57c2c
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! b39024fe-b8d7-4404-8c3d-00f90f3f18fe
+    Parts:
+        -   Entity:
+                Id: b39024fe-b8d7-4404-8c3d-00f90f3f18fe
+                Name: Coin
+                Components:
+                    abdf42f520a2e6df9f1904a05f20c04e: !TransformComponent
+                        Id: eef5debe-759c-46e6-894d-63dfc701d32a
+                        Position: {X: -3.7413943, Y: 0.0, Z: -1.565703}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0608bebf14cf8bdb225e08ca7fda4587: ref!! 637ee434-124d-4ed1-bffb-6044109649f6
+                    87b6d7aa0ee92bd822193a46cedf8101: !Controllers.CoinController,StridePlatformer.Game
+                        Id: 31f8e563-8dc7-4e6c-a64f-3876cddf0f2c
+                        Trigger: null
+                        GameController: null
+        -   Entity:
+                Id: f206f2c2-ff80-4e48-8099-4901f1103cdb
+                Name: basic-coin
+                Components:
+                    79623947a44d362bfc9c3876fefae1f9: !TransformComponent
+                        Id: 637ee434-124d-4ed1-bffb-6044109649f6
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    75afc8ba84ae81375f4b707b216a9e11: !ModelComponent
+                        Id: 2d4c56f6-b6a2-4256-a309-65985777dd1c
+                        Model: aae09d2e-e7e0-42f1-bc47-125df6f97fbe:Models/basic-coin
+                        Materials: {}
+                    a17db75e7935c3106eb07a18867d3185: !Platformer.RotateAndBob,StridePlatformer.Game
+                        Id: 701d386e-d281-4829-89b0-17ca798ce3dd
+                        BobAmplitude: 0.005
+                        BobFrequency: 0.5
+                        RotationSpeed: 100.0
+                    a715f81dd245033ef42b5ed8bac9cc85: !StaticColliderComponent
+                        Id: 005eb9d6-91fc-495c-a762-d0275477c57f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            dec87e764158dc2ec50607683e0cf353: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.1, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

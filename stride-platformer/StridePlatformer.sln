@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StridePlatformer.Windows", "stride-platformer.Windows\StridePlatformer.Windows.csproj", "{276A6730-7356-4DDF-AB7F-942DF9BA56C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StridePlatformer.Game", "stride-platformer.Game\StridePlatformer.Game.csproj", "{5CA96B23-E216-488B-8AF6-2619CDF8BBFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{276A6730-7356-4DDF-AB7F-942DF9BA56C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276A6730-7356-4DDF-AB7F-942DF9BA56C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276A6730-7356-4DDF-AB7F-942DF9BA56C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276A6730-7356-4DDF-AB7F-942DF9BA56C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA96B23-E216-488B-8AF6-2619CDF8BBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA96B23-E216-488B-8AF6-2619CDF8BBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA96B23-E216-488B-8AF6-2619CDF8BBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA96B23-E216-488B-8AF6-2619CDF8BBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C1896FC-5C50-4FE3-A294-A162A3CBDC49}
+	EndGlobalSection
+EndGlobal

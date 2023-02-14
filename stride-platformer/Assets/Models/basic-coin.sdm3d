@@ -1,0 +1,16 @@
+!Model
+Id: aae09d2e-e7e0-42f1-bc47-125df6f97fbe
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Model/basic-coin.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.5
+Materials:
+    8b1740249195d556630318cabeafd487:
+        Name: Material
+        MaterialInstance:
+            Material: 2bcbd4cc-07b8-4307-af26-8c9fb640dd8a:Materials/CoinMT
+Modifiers: {}
+~SourceHashes:
+    c9737018d67a4b4aff47653cb21b2f56~../../Resources/Model/basic-coin.fbx: ca7f93b239b5036751526c84638b122f

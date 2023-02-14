@@ -1,0 +1,31 @@
+!Model
+Id: d9160e1a-02ea-40a1-b76a-9c36c51d621d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/stride-bot.fbx
+Skeleton: c4dd32cc-fe93-4d09-9bb4-c6bd36cfd60d:Models/StrideBot/stride-bot Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    02b1ce10ac10b6c1ad15562c9b4cfcd7:
+        Name: Material.001
+        MaterialInstance:
+            Material: 2c98841a-7fd3-43c8-8dd6-979c4d27dbf8:Materials/StrideBot/stride-red
+    0569bc310be0407ef3388846ef01dfdd:
+        Name: Screen
+        MaterialInstance:
+            Material: 1b875928-4e6f-4460-b5fc-ccaa3ec9a7c8:Materials/StrideBot/screen
+    197c6c9b3883091ded07d05b404435e2:
+        Name: Rubber
+        MaterialInstance:
+            Material: abb97591-3661-464c-9627-94f228ea3f11:Materials/StrideBot/rubber
+    d9fb9b8f0319a50ae0420a1010995f9e:
+        Name: stainless-steel
+        MaterialInstance:
+            Material: e9829f79-66f8-4c61-938f-094f1c12e6ae:Materials/StrideBot/stainless-steel
+    518ad1789930f956af65b67bc146e638:
+        Name: Steel
+        MaterialInstance:
+            Material: 7fbee48b-245f-49a3-846b-a8d426cd446b:Materials/StrideBot/steel
+Modifiers: {}
+~SourceHashes:
+    deef04c20f3f4b6c1f4bd6dd6aa7b1e5~../../../Resources/Model/stride-bot.fbx: 7f3532e99f3ed0d840f46eb31667e751

@@ -1,0 +1,173 @@
+!PrefabAsset
+Id: f931de6d-5e23-4325-a9e7-96bc4fa9d51f
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! e62448ca-d27a-4f21-abcc-10458549c71d
+    Parts:
+        -   Entity:
+                Id: 0442b263-d9c8-40fc-85c8-39394564e7f6
+                Name: Camera
+                Components:
+                    a116d811cab5bf4da5211050e1d34e10: !TransformComponent
+                        Id: 54996ac3-7fe0-4dd9-8645-2fbcce98988f
+                        Position: {X: 0.0, Y: 0.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1fb7d1656248fc4eb7c13c9d933979c7: !CameraComponent
+                        Id: 50ca471b-53d8-4f3e-806b-653fc3ebd5b6
+                        Name: null
+                        Projection: Perspective
+                        Slot: 9aeac611-d1f6-46da-a235-e20cc154e170
+                    cffbc9ddf95f8544a284e04ea2d27d8a: !StridePlatformer.Camera.ThirdPersonCamera,StridePlatformer.Game
+                        Id: ac66c824-48b1-4c8f-a3d9-09380289ae9c
+                        DefaultDistance: 6.0
+                        MinimumDistance: 0.4
+                        ConeRadius: 1.25
+                        InvertX: false
+                        MinVerticalAngle: -20.0
+                        MaxVerticalAngle: 70.0
+                        InvertY: false
+                        RotationSpeed: 360.0
+                        VerticalSpeed: 45.0
+            Base:
+                BasePartAsset: ed083a2d-26ca-4697-8c57-b4eab2cc2dd9:Prefabs/PlayerCharacter
+                BasePartId: 6c6083f6-89f6-4973-b8f5-2fa86e1807e2
+                InstanceId: f5f3aecb-7f20-49ad-84ab-7b93dc8f9365
+        -   Entity:
+                Id: 15780158-a035-440b-a7f3-0c31ea4061d8
+                Name: Spot light
+                Components:
+                    aecac22e9d8fe183cf6a1a8a698c59d9: !TransformComponent
+                        Id: cce33916-3200-4973-8ead-f692f87666c9
+                        Position: {X: 0.0, Y: 0.0, Z: 0.002}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    758df2e5e0edfd0eb748c3147bad209f: !LightComponent
+                        Id: 056353a5-2d8b-406a-b8ee-e82595d973d5
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 0.9946875, B: 0.7875}
+                            Range: 5.0
+                            AngleInner: 90.0
+                            AngleOuter: 42.8
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 2.0
+                    2cf1fd1e4fe4999797548fc4885f5ac8: !ModelNodeLinkComponent
+                        Id: 6f19091d-0de5-4db0-a01d-59d064489063
+                        Target: ref!! 6a96e0fb-0db8-4615-b6d8-7058972d4e0d
+                        NodeName: NeckHead_end
+        -   Entity:
+                Id: 2975d9b9-967d-47e1-865b-eadfc0ece3d9
+                Name: MannequinModel
+                Components:
+                    1245d3c0d097e44e8295e28dad432562: !TransformComponent
+                        Id: 991ba899-3d83-4253-bdaf-8bc389ac7a06
+                        Position: {X: 0.0, Y: 4.7683716E-07, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    0fa4902c57c2de428808e383912863ea: !ModelComponent
+                        Id: 6a96e0fb-0db8-4615-b6d8-7058972d4e0d
+                        Enabled*: true
+                        Model*: d9160e1a-02ea-40a1-b76a-9c36c51d621d:Models/StrideBot/stride-bot
+                        Materials: {}
+                    978eabfaac453f4d9375495d32bc299f: !StridePlatformer.Player.AnimationController,StridePlatformer.Game
+                        Id: 7786454c-ce00-4b99-b1b5-ba417c45f21a
+                        AnimationComponent: ref!! ecbee639-af2e-476b-96a1-594c0111ec4b
+                        AnimationIdle*: 907742b6-2a2e-47db-8b2d-5b344c701afc:Animations/StrideBot/stride-bot_Idle
+                        AnimationWalk*: 5df41521-bafa-49f0-aeda-d2401286bdc9:Animations/StrideBot/stride-bot_Walk
+                        AnimationRun*: 549c8e60-a71f-40e4-9b66-6fac06606b2c:Animations/StrideBot/stride-bot_Run
+                        AnimationJumpStart*: ef6188bc-e952-4c4c-9e5d-27ffea88636b:Animations/StrideBot/stride-bot_Jump
+                        AnimationJumpMid*: 5df41521-bafa-49f0-aeda-d2401286bdc9:Animations/StrideBot/stride-bot_Walk
+                        AnimationJumpEnd*: 9506ad85-7a32-4381-93ef-6f070dfcccd9:Animations/StrideBot/stride-bot_Land
+                        WalkThreshold: 0.25
+                        TimeFactor: 1.0
+                    5847b2c0adfcf347a100f94d96c5d325: !AnimationComponent
+                        Id: ecbee639-af2e-476b-96a1-594c0111ec4b
+                        Animations: {}
+            Base:
+                BasePartAsset: ed083a2d-26ca-4697-8c57-b4eab2cc2dd9:Prefabs/PlayerCharacter
+                BasePartId: 8f8e017e-69ed-45d7-97d7-a30a67bbb949
+                InstanceId: f5f3aecb-7f20-49ad-84ab-7b93dc8f9365
+        -   Entity:
+                Id: e62448ca-d27a-4f21-abcc-10458549c71d
+                Name: PlayerCharacter
+                Components:
+                    b296752080481e41b569d385767428ce: !TransformComponent
+                        Id: 1b93c998-e699-451d-aba1-56dddbdb1fb2
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1245d3c0d097e44e8295e28dad432562: ref!! 991ba899-3d83-4253-bdaf-8bc389ac7a06
+                            39d4bdb202782a41869f2a6d53da4edf: ref!! bf2b1264-6305-4f15-8a50-0595987bb001
+                            197a51278d8d8f7d1797527e56f9dab9: ref!! cce33916-3200-4973-8ead-f692f87666c9
+                    b978a0332590234b9f3a3537f50e75ae: !CharacterComponent
+                        Id: 48bf8876-173d-43e7-a841-03a3d2b1fceb
+                        CollisionGroup: KinematicFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 13.0
+                        Gravity: {X: 0.0, Y: -40.0, Z: 0.0}
+                        ColliderShapes:
+                            56a5239435c0e54188f913fd5d2f5dee: !CapsuleColliderShapeDesc
+                                Length: 1.2
+                                Radius: 0.4
+                                LocalOffset: {X: 0.0, Y: 0.95, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    f722a19496166946a5d26eaf23d2ae03: !StridePlatformer.Player.PlayerController,StridePlatformer.Game
+                        Id: cf889526-96b4-4d32-8f32-71ffe839d734
+                        MaxRunSpeed: 8.5
+                        JumpReactionThreshold: 0.15
+                    809bf66aef692646891c293be4ca17b2: !StridePlatformer.Player.PlayerInput,StridePlatformer.Game
+                        Id: f1717f2d-83a6-473d-a154-3d1553078acb
+                        MouseSensitivity: 100.0
+                        DeadZone: 0.25
+                        Camera: ref!! 50ca471b-53d8-4f3e-806b-653fc3ebd5b6
+                        KeysLeft:
+                            188e93f66916cf656ff39c2c364a16ce: A
+                            209be0885cbd15e2824ee34abbf1e993: Left
+                        KeysRight:
+                            b19f9a0fb9749d53d2cf6e353c2dde59: D
+                            da3e9e9055cb7a4648d733f34b8a6afb: Right
+                        KeysUp:
+                            6f9526aa5d381de305cc00fa39927ff8: W
+                            0bf61a77531d87ca4bc6697a5d3a9a73: Up
+                        KeysDown:
+                            d074974d39648acf3dd67ba90125999c: S
+                            47b7f2884469c9d74a4712034dba6f5a: Down
+                        KeysJump:
+                            23fe5ceb28bd9649fa594f451bbef24b: Space
+            Base:
+                BasePartAsset: ed083a2d-26ca-4697-8c57-b4eab2cc2dd9:Prefabs/PlayerCharacter
+                BasePartId: 4ae2029d-5e38-408b-bedc-ef4a46b8ba35
+                InstanceId: f5f3aecb-7f20-49ad-84ab-7b93dc8f9365
+        -   Entity:
+                Id: ecd1ef44-44ee-420a-a0aa-31676d416484
+                Name: CameraTarget
+                Components:
+                    39d4bdb202782a41869f2a6d53da4edf: !TransformComponent
+                        Id: bf2b1264-6305-4f15-8a50-0595987bb001
+                        Position: {X: 0.0, Y: 1.65, Z: 0.0}
+                        Rotation: {X: -0.16715722, Y: -0.55716187, Z: -0.115674, W: 0.8051389}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            a116d811cab5bf4da5211050e1d34e10: ref!! 54996ac3-7fe0-4dd9-8645-2fbcce98988f
+            Base:
+                BasePartAsset: ed083a2d-26ca-4697-8c57-b4eab2cc2dd9:Prefabs/PlayerCharacter
+                BasePartId: 1b7addc5-e3e5-400d-bd78-1066f21521a3
+                InstanceId: f5f3aecb-7f20-49ad-84ab-7b93dc8f9365
