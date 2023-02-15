@@ -1,0 +1,20 @@
+!Model
+Id: 4f4e0903-f9b2-4793-b746-6c6ec5cdf1d8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file street-light.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.5
+Materials:
+    82ed047a8ea3154dcff470f358ec8a18:
+        Name: Pole
+        MaterialInstance:
+            Material: c0403d85-1e08-4bf9-874a-a78be7912887:Materials/CityMats/StreetLightPole
+    0cce2ed1fc3087a777d746e45268bc52:
+        Name: Light
+        MaterialInstance:
+            Material: 241c6b13-bbd4-479c-94b2-08c51c474af2:Materials/CityMats/Glass
+Modifiers: {}
+~SourceHashes:
+    1cfce97dfe1c8ff3419447c7d9974ebb~street-light.fbx: 8d9b5725cb75cb242ee1d8f09b18c910

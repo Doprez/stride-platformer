@@ -1,0 +1,113 @@
+!PrefabAsset
+Id: 37968bfa-7762-445c-8a6e-00b49f374931
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! adc63581-cd23-4767-a57c-7e7f6666933d
+    Parts:
+        -   Entity:
+                Id: 0b400d54-66f1-4a69-a7f4-4ac88928583c
+                Name: street-light
+                Components:
+                    b6a8be79870d8526da3598b4d0272f37: !TransformComponent
+                        Id: 4e52ebb4-4213-4853-82c8-7f260c002377
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    48317f0c46b0a6056df2850320fda544: !ModelComponent
+                        Id: c8ecafef-dc6b-4912-a0d5-3e42fd362180
+                        Model: 4f4e0903-f9b2-4793-b746-6c6ec5cdf1d8:Models/CityProps/street-light
+                        Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 3a02ce44-8c99-4f2d-b197-750d4a13d459
+                Name: Spot light
+                Components:
+                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
+                        Id: 92c4f4fa-f22c-4cf0-8e97-9d973b5d23e6
+                        Position: {X: 0.0, Y: 5.3322735, Z: -0.16326843}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
+                        Id: 1957a9e9-3fbc-4b00-bdcd-33d390979d02
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 6.0
+                            AngleInner: 90.0
+                            AngleOuter: 90.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            TransitionArea: 1.0
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 15.0
+        -   Entity:
+                Id: 9d3ff505-a968-4b2f-bea0-cb40a44597ac
+                Name: Spot light
+                Components:
+                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
+                        Id: 4edf3f32-9d22-41a5-b6dd-0f72951f669c
+                        Position: {X: 0.0, Y: 5.3322735, Z: -1.2295048}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
+                        Id: 24d635f8-4566-4d80-a0de-f85834504db7
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 6.0
+                            AngleInner: 90.0
+                            AngleOuter: 90.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            TransitionArea: 1.0
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 15.0
+        -   Entity:
+                Id: adc63581-cd23-4767-a57c-7e7f6666933d
+                Name: StreetLight
+                Components:
+                    bb4cbde6a16bd200c3e63e92e3226d8d: !TransformComponent
+                        Id: f5c4b657-5b2d-4774-a8a8-e42a3e68690f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            f771ccea9a0351eb530b434a7069d202: ref!! 4e52ebb4-4213-4853-82c8-7f260c002377
+                            baa51ef26dc49ef17c2b49984efb575e: ref!! 4edf3f32-9d22-41a5-b6dd-0f72951f669c
+                            43a028514512293701614af0aac47380: ref!! 92c4f4fa-f22c-4cf0-8e97-9d973b5d23e6
+                            d9e9f76a438be187d9fcb4d952a1c0ce: ref!! dc56c53a-a22c-499d-85d1-1c4188ddbce4
+        -   Folder: null
+            Entity:
+                Id: e0ee9180-a7e5-4483-97e0-086e51d85e93
+                Name: Spot light
+                Components:
+                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
+                        Id: dc56c53a-a22c-499d-85d1-1c4188ddbce4
+                        Position: {X: 0.0, Y: 5.3322735, Z: -2.706634}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
+                        Id: d906e163-bd59-49e9-a6de-3145b351aefe
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 6.0
+                            AngleInner: 90.0
+                            AngleOuter: 90.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            TransitionArea: 1.0
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 15.0

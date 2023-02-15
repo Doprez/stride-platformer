@@ -2,7 +2,7 @@
 Id: 8b4d7467-cd06-48e7-a384-7b2ffbadc909
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../Resources/Models/mannequinModel.fbx
+Source: !file ../../../Resources/Models/mannequinModel.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     2b83a4a0d5dde6216f7c2fe8b32bbfe2: {Name: RootNode, Depth: 0}
@@ -98,4 +98,4 @@ Nodes:
     f56e18ef821077a1cfc8beea9d7fb036: {Name: CATRigRArmIKTarget, Depth: 1}
     149861784d2d7288eb41824229d7a683: {Name: CATRigLArmIKTarget, Depth: 1}
 ~SourceHashes:
-    43cd1cf030899832bf4f4ee7f84f7670~../../Resources/Models/mannequinModel.fbx: 41531d1299044bd0f0b265374610fb1d
+    9322a5064973353b63a2ab6a64ea4555~../../../Resources/Models/mannequinModel.fbx: 41531d1299044bd0f0b265374610fb1d
