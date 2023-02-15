@@ -18,9 +18,9 @@ Hierarchy:
                         Children: {}
                     289202be5050af41832ce05e2d398d2c: !ModelComponent
                         Id: be029228-5050-41af-832c-e05e2d398d2c
-                        Model: a35eb213-64a3-4358-8a1a-39ed760575cb:Models/Stairs1x1x2
+                        Model: a35eb213-64a3-4358-8a1a-39ed760575cb:Models/ExampleProps/Stairs1x1x2
                         Materials:
-                            74dc3e7c6e633f46a3801edd86a197dd~0: dade1937-6232-404e-bedc-223d3bd2f59c:Materials/GridMTStairs
+                            74dc3e7c6e633f46a3801edd86a197dd~0: dade1937-6232-404e-bedc-223d3bd2f59c:Materials/ExamplesMats/GridMTStairs
                     01635891d64e2c4d98af82259f64e540: !StaticColliderComponent
                         Id: 91586301-4ed6-4d2c-98af-82259f64e540
                         CanSleep: true

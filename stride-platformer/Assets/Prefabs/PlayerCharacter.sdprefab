@@ -109,7 +109,7 @@ Hierarchy:
                         Children: {}
                     0fa4902c57c2de428808e383912863ea: !ModelComponent
                         Id: 6920f45c-ada1-4de0-a092-f5eaa9946b7a
-                        Model: 003ac0e8-510f-4331-bc10-906491ab81f5:Models/mannequinModel
+                        Model: 003ac0e8-510f-4331-bc10-906491ab81f5:Models/ExampleProps/mannequinModel
                         Materials: {}
                     978eabfaac453f4d9375495d32bc299f: !StridePlatformer.Player.AnimationController,StridePlatformer.Game
                         Id: f07b0aaa-026d-4e74-ac11-3c472d375ac9

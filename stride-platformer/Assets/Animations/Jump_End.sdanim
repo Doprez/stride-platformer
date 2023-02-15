@@ -10,9 +10,9 @@ ClipDuration:
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 RepeatMode: LoopInfinite
 Type: !StandardAnimationAssetType {}
-Skeleton: 8b4d7467-cd06-48e7-a384-7b2ffbadc909:Models/mannequinModel Skeleton
+Skeleton: 8b4d7467-cd06-48e7-a384-7b2ffbadc909:Models/ExampleProps/mannequinModel Skeleton
 RootMotion: false
-PreviewModel: 003ac0e8-510f-4331-bc10-906491ab81f5:Models/mannequinModel
+PreviewModel: 003ac0e8-510f-4331-bc10-906491ab81f5:Models/ExampleProps/mannequinModel
 AnimationTimeMinimum: 0:00:00:00.0000000
 AnimationTimeMaximum: 0:00:00:00.4830000
 ~SourceHashes:

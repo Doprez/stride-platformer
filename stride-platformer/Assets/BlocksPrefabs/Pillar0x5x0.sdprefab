@@ -18,9 +18,9 @@ Hierarchy:
                         Children: {}
                     9824be4e570113419527810ca0e59df5: !ModelComponent
                         Id: 4ebe2498-0157-4113-9527-810ca0e59df5
-                        Model: 502438bf-b993-4570-a090-2dae16846966:Models/Pillar0x5x0
+                        Model: 502438bf-b993-4570-a090-2dae16846966:Models/ExampleProps/Pillar0x5x0
                         Materials:
-                            375be21b17b931489b7075f15158cba7~0: 100396c3-6e2d-4aa8-9682-bbb67c91086e:Materials/GridMTHazard
+                            375be21b17b931489b7075f15158cba7~0: 100396c3-6e2d-4aa8-9682-bbb67c91086e:Materials/ExamplesMats/GridMTHazard
                     23c28da116b69348aa23606dcc7b416f: !StaticColliderComponent
                         Id: a18dc223-b616-4893-aa23-606dcc7b416f
                         CollisionGroup: StaticFilter

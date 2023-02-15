@@ -18,9 +18,9 @@ Hierarchy:
                         Children: {}
                     f37bc5fdfb615b449c53b27bf6cd774c: !ModelComponent
                         Id: fdc57bf3-61fb-445b-9c53-b27bf6cd774c
-                        Model: 67a89ed2-5aeb-4b08-91b0-701480239826:Models/Ramp1x1_2x2
+                        Model: 67a89ed2-5aeb-4b08-91b0-701480239826:Models/ExampleProps/Ramp1x1_2x2
                         Materials:
-                            74dc3e7c6e633f46a3801edd86a197dd~0: dade1937-6232-404e-bedc-223d3bd2f59c:Materials/GridMTStairs
+                            74dc3e7c6e633f46a3801edd86a197dd~0: dade1937-6232-404e-bedc-223d3bd2f59c:Materials/ExamplesMats/GridMTStairs
                     dc14c0a2cfc23c4888d690b32f62969d: !StaticColliderComponent
                         Id: a2c014dc-c2cf-483c-88d6-90b32f62969d
                         CanSleep: true

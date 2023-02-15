@@ -18,9 +18,9 @@ Hierarchy:
                         Children: {}
                     009b60908ca6b44fbfac9f90cb43af2e: !ModelComponent
                         Id: 90609b00-a68c-4fb4-bfac-9f90cb43af2e
-                        Model: 37183dd0-c734-4acf-9ee3-0d262a7e1b15:Models/Table2x2x2
+                        Model: 37183dd0-c734-4acf-9ee3-0d262a7e1b15:Models/ExampleProps/Table2x2x2
                         Materials:
-                            ecd1b81c86e9114d86fcdf436455648f~0: a2eeca43-19ec-40a3-b8e1-115d0e2c06db:Materials/GridMTArc
+                            ecd1b81c86e9114d86fcdf436455648f~0: a2eeca43-19ec-40a3-b8e1-115d0e2c06db:Materials/ExamplesMats/GridMTArc
                     e8d6d181aa1dab4fa7353dbc6a807bd7: !StaticColliderComponent
                         Id: 81d1d6e8-1daa-4fab-a735-3dbc6a807bd7
                         CollisionGroup: StaticFilter

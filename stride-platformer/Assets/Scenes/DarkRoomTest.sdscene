@@ -9,6 +9,7 @@ Hierarchy:
         - ref!! ae8842a0-e521-485a-a375-aeeab42b276e
         - ref!! a1d066b5-2245-4aac-ad41-e2c6461e8572
         - ref!! c551d7a3-8262-4f55-bfbb-6da0558a942e
+        - ref!! 6b1b9819-355a-44cd-992c-961f6bd3d145
     Parts:
         -   Entity:
                 Id: 276b4f3d-0a4e-49d1-9798-bcd96e5e5ba9
@@ -42,6 +43,24 @@ Hierarchy:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: 15780158-a035-440b-a7f3-0c31ea4061d8
                 InstanceId: c06b8645-1fab-44fa-9aa0-caa0fd6cbaeb
+        -   Entity:
+                Id: 6b1b9819-355a-44cd-992c-961f6bd3d145
+                Name: StreetLight
+                Components:
+                    bb4cbde6a16bd200c3e63e92e3226d8d: !TransformComponent
+                        Id: c1df9349-981d-48f8-9517-9342c0488b7e
+                        Position*: {X: -2.0776877, Y: 0.0, Z: 0.7618998}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            f771ccea9a0351eb530b434a7069d202: ref!! 65f2aed0-f4af-495e-bf94-494e83a57781
+                            7b1512514ce08aebc9542f3527fff95d: ref!! 05159681-2328-4590-9501-dfd35a173641
+                            a454a6b7030176aac0c4a34fee098a80: ref!! 68051be6-6be8-4bd4-92b2-b4f870ef36e4
+                            5220967a1cc9dbec7d4583d13f804e16: ref!! 627891b3-9390-436e-b71c-9c2dbedef59e
+            Base:
+                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
+                BasePartId: adc63581-cd23-4767-a57c-7e7f6666933d
+                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
         -   Folder: null
             Entity:
                 Id: 6c9e2045-1657-4b57-9b95-9975ea2c86c1
@@ -58,6 +77,36 @@ Hierarchy:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: ecd1ef44-44ee-420a-a0aa-31676d416484
                 InstanceId: c06b8645-1fab-44fa-9aa0-caa0fd6cbaeb
+        -   Folder: null
+            Entity:
+                Id: 7a2b85e3-7aeb-416c-8c70-c5716cb1c711
+                Name: Spot light
+                Components:
+                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
+                        Id: 627891b3-9390-436e-b71c-9c2dbedef59e
+                        Position: {X: 0.0, Y: 5.3322735, Z: -2.706634}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
+                        Id: 0ef40b21-9488-4d4a-881f-8d73397fa57c
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 6.0
+                            AngleInner: 90.0
+                            AngleOuter: 90.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            TransitionArea: 1.0
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 15.0
+            Base:
+                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
+                BasePartId: e0ee9180-a7e5-4483-97e0-086e51d85e93
+                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
         -   Entity:
                 Id: a1d066b5-2245-4aac-ad41-e2c6461e8572
                 Name: Floor1x0x1
@@ -70,7 +119,7 @@ Hierarchy:
                         Children: {}
                     018b69f46d7083119d6fda18622fbdc8: !ModelComponent
                         Id: f2e8964d-2fb5-4816-8d23-90d6a1e2a3de
-                        Model: 3d0df739-7fd4-455f-847f-e9316c4f5b08:Models/Floor1x0x1
+                        Model: 3d0df739-7fd4-455f-847f-e9316c4f5b08:Models/ExampleProps/Floor1x0x1
                         Materials: {}
                     6c2b38e8313379db8bc2cd0cb193915b: !StaticColliderComponent
                         Id: 09263c4a-10f9-4e5a-b359-ad6c5f28fca2
@@ -88,6 +137,24 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 0.1, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: a77f81a6-579c-493d-90fe-46f0f3cec382
+                Name: street-light
+                Components:
+                    b6a8be79870d8526da3598b4d0272f37: !TransformComponent
+                        Id: 65f2aed0-f4af-495e-bf94-494e83a57781
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    48317f0c46b0a6056df2850320fda544: !ModelComponent
+                        Id: 39169f33-e4eb-49d7-b930-f6b400eb678a
+                        Model: 4f4e0903-f9b2-4793-b746-6c6ec5cdf1d8:Models/CityProps/street-light
+                        Materials: {}
+            Base:
+                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
+                BasePartId: 0b400d54-66f1-4a69-a7f4-4ac88928583c
+                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
         -   Entity:
                 Id: ae8842a0-e521-485a-a375-aeeab42b276e
                 Name: PlayerCharacter
@@ -160,7 +227,7 @@ Hierarchy:
                         Children: {}
                     018b69f46d7083119d6fda18622fbdc8: !ModelComponent
                         Id: ea84f68f-0dff-411c-ab47-68b96b9610f4
-                        Model: 3d0df739-7fd4-455f-847f-e9316c4f5b08:Models/Floor1x0x1
+                        Model: 3d0df739-7fd4-455f-847f-e9316c4f5b08:Models/ExampleProps/Floor1x0x1
                         Materials: {}
                     6c2b38e8313379db8bc2cd0cb193915b: !StaticColliderComponent
                         Id: 642b8c85-ca56-4c94-9c1e-66094c68d6b2
@@ -178,6 +245,36 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 0.1, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: null
+            Entity:
+                Id: de95b1a3-f1d0-4943-b999-07f58c9a00da
+                Name: Spot light
+                Components:
+                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
+                        Id: 68051be6-6be8-4bd4-92b2-b4f870ef36e4
+                        Position: {X: 0.0, Y: 5.3322735, Z: -0.16326843}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
+                        Id: 0784e4d4-aa06-4d03-818a-71c2f8278586
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 6.0
+                            AngleInner: 90.0
+                            AngleOuter: 90.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            TransitionArea: 1.0
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 15.0
+            Base:
+                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
+                BasePartId: 3a02ce44-8c99-4f2d-b197-750d4a13d459
+                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
         -   Folder: null
             Entity:
                 Id: e695a7cc-e8d3-432d-8755-fbf0573d2c74
@@ -209,6 +306,35 @@ Hierarchy:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: 0442b263-d9c8-40fc-85c8-39394564e7f6
                 InstanceId: c06b8645-1fab-44fa-9aa0-caa0fd6cbaeb
+        -   Entity:
+                Id: ee06d7ef-eb67-436f-a10d-0d9405d5cdae
+                Name: Spot light
+                Components:
+                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
+                        Id: 05159681-2328-4590-9501-dfd35a173641
+                        Position: {X: 0.0, Y: 5.3322735, Z: -1.2295048}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
+                        Id: f1be62fa-1503-4658-8880-5853cf842660
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 6.0
+                            AngleInner: 90.0
+                            AngleOuter: 90.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            TransitionArea: 1.0
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 15.0
+            Base:
+                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
+                BasePartId: 9d3ff505-a968-4b2f-bea0-cb40a44597ac
+                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
         -   Folder: null
             Entity:
                 Id: f2be3222-4450-4488-8d3d-ed74ce50071c

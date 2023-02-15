@@ -18,9 +18,9 @@ Hierarchy:
                         Children: {}
                     4d58a9788f77724c823418b8b7f17537: !ModelComponent
                         Id: 78a9584d-778f-4c72-8234-18b8b7f17537
-                        Model: cfec10bf-7296-477f-9a31-d1bf701705cc:Models/Wall0x2x2Window
+                        Model: cfec10bf-7296-477f-9a31-d1bf701705cc:Models/ExampleProps/Wall0x2x2Window
                         Materials:
-                            ec9522ed2e91694abd8663b5b8ada228~0: 062541ab-0b5d-4982-a8b5-4b515afbc344:Materials/GridMTWall
+                            ec9522ed2e91694abd8663b5b8ada228~0: 062541ab-0b5d-4982-a8b5-4b515afbc344:Materials/ExamplesMats/GridMTWall
                     7788b92a4ec3be43bb9617ff231cfb59: !StaticColliderComponent
                         Id: 2ab98877-c34e-43be-bb96-17ff231cfb59
                         CanSleep: true
