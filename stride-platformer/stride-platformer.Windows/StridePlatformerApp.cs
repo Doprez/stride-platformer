@@ -8,6 +8,7 @@ namespace StridePlatformer
         {
             using (var game = new Game())
             {
+                game.Services.AddService(new GameStateService(game));
                 game.Run();
             }
         }
