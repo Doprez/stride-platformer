@@ -1,4 +1,5 @@
 using Stride.Engine;
+using StridePlatformer.Services;
 
 namespace StridePlatformer
 {
