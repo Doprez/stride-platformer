@@ -3012,6 +3012,9 @@ Hierarchy:
                             47b7f2884469c9d74a4712034dba6f5a: Down
                         KeysJump:
                             23fe5ceb28bd9649fa594f451bbef24b: Space
+                    a315c0e37a0795518798ecc8a83c2f06: !StridePlatformer.Data.PlayerData,StridePlatformer.Game
+                        Id: 684fafdd-a884-4a7a-9d41-cb7d73ed9e73
+                        PlayerHealth: 100.0
             Base:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: e62448ca-d27a-4f21-abcc-10458549c71d
