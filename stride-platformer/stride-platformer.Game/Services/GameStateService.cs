@@ -19,9 +19,14 @@ public class GameStateService
 		RunningGameData = game;
 	}
 
-	public void AddCoin(Entity coin)
+	public void AddCoinFromScene(Entity coin)
 	{
 		CoinsInScene.Add(coin);
+	}
+
+	public int GetCoinsRemaining()
+	{
+		return CoinsInScene.Count;
 	}
 
 }

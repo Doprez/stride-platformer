@@ -2,6 +2,7 @@ using System.Collections.Specialized;
 using Stride.Core.Collections;
 using Stride.Engine;
 using Stride.Physics;
+using StridePlatformer.Services;
 
 namespace Controllers;
 
@@ -12,6 +13,8 @@ public class CoinController : StartupScript
 
 	public PhysicsComponent Trigger;
 
+	private GameStateService _gameState;
+
 	public override void Start() 
 	{
 		base.Start();
@@ -21,6 +24,9 @@ public class CoinController : StartupScript
 		}
 
 		Trigger.Collisions.CollectionChanged += CollisionsChanged;
+
+		_gameState = Game.Services.GetService<GameStateService>();
+		_gameState.AddCoinFromScene(Entity);
 	}
 	
 	private void CollisionsChanged(object sender, TrackingCollectionChangedEventArgs args)
