@@ -1,0 +1,70 @@
+!PrefabAsset
+Id: 58d2f65b-94a7-4456-9286-6c2b14e25f6b
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 555bb3ab-045b-4738-8b38-7e96d553c161
+    Parts:
+        -   Entity:
+                Id: 0e00434c-ac87-4829-997c-3e480ac61afe
+                Name: Trogladyte
+                Components:
+                    97954a8eb95bd0afd7be842d2e8ef005: !TransformComponent
+                        Id: 345f6e62-3370-4812-8b9b-fd1cd9a7f90c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f979fd95b96b0b9dc170c7b5ceec1b8e: !ModelComponent
+                        Id: 33aab412-f347-4aeb-ba83-6e9ce310f2a7
+                        Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte
+                        Materials: {}
+        -   Folder: Enemies
+            Entity:
+                Id: 555bb3ab-045b-4738-8b38-7e96d553c161
+                Name: GenericMonster
+                Components:
+                    f86af5e64d82fd20f8715b1538e7d943: !TransformComponent
+                        Id: dab10cfa-c41f-440b-b200-609f017990df
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: -0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            e7483ea5f8ecd28b8ac0d9e8ab368b8a: ref!! 345f6e62-3370-4812-8b9b-fd1cd9a7f90c
+                            f1ee1cd08fc3c950664b6b3afe1441d6: ref!! 8e1fec07-2783-466a-b63f-d7f77d23dad5
+                    7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
+                        Id: aa6e74ec-bdf7-45c7-8334-373464f4b3e4
+                        AttackTrigger: !StaticColliderComponent ref!! 10e333e7-df52-4569-a79b-bf6a084a370e
+                        Player: null
+                    8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
+                        Id: 2d8ee278-6e96-44a6-a7f8-0ba134427a11
+                        TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+                        MovementSpeed: 3.0
+                        NavGroupName: GenericMonster
+        -   Entity:
+                Id: e0bc5767-bd8e-40ce-8b9a-23543c33ba36
+                Name: AttackTrigger
+                Components:
+                    1068bfee60240b5cedfc1fcddc71ea39: !TransformComponent
+                        Id: 8e1fec07-2783-466a-b63f-d7f77d23dad5
+                        Position: {X: 0.19466387, Y: 0.82591635, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    94d3ee4e6bf3e0ff33a65d875674ea04: !StaticColliderComponent
+                        Id: 10e333e7-df52-4569-a79b-bf6a084a370e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            62d2a1e80e9b2494b4a2e81d89983531: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 0.1, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

@@ -951,21 +951,25 @@ Hierarchy:
                 Components:
                     f86af5e64d82fd20f8715b1538e7d943: !TransformComponent
                         Id: 72c15772-d1c0-43b0-8139-6cd7646a6e7b
-                        Position: {X: -1.6679665, Y: 0.0, Z: 4.602317}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: -0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             e7483ea5f8ecd28b8ac0d9e8ab368b8a: ref!! 150624cf-4520-47cb-b55a-6a170648a10a
                             f1ee1cd08fc3c950664b6b3afe1441d6: ref!! cf39ad54-2dad-473d-80cf-7bd4dd905bf5
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
-                        Id: 5a1209b9-25df-4623-929b-f55edd2410aa
-                        AttackTrigger: !StaticColliderComponent ref!! 0b8bfc11-c304-4df9-b61f-88ae2f464cd1
-                        Player: ref!! 5fc52dcf-f9f8-4c6d-b32d-3fc989aea8ad
+                        Id: 5b9673eb-83cc-4dbb-acb6-3c727d7e18d2
+                        AttackTrigger: !StaticColliderComponent ref!! 9b419d05-5b05-41d5-8835-f8e07557658c
+                        Player: null
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
-                        Id: b6709c52-0e20-4b2d-b7f6-33b4be17bc68
+                        Id: 943a36e8-3007-4ace-81b7-f58cb2d988a9
                         TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
                         MovementSpeed: 3.0
                         NavGroupName: GenericMonster
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: 555bb3ab-045b-4738-8b38-7e96d553c161
+                InstanceId: 2999a435-275c-4531-b6fb-d65dd12bb8b6
         -   Folder: Platform
             Entity:
                 Id: 1b03b12f-f4a8-435e-8efe-d311f2e10cbf
@@ -989,9 +993,13 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     f979fd95b96b0b9dc170c7b5ceec1b8e: !ModelComponent
-                        Id: 93739236-0343-46df-8ec5-c980b352f947
+                        Id: 3799ba8a-6f4e-46a0-bbb1-3ff142fd19b5
                         Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte
                         Materials: {}
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: 0e00434c-ac87-4829-997c-3e480ac61afe
+                InstanceId: 2999a435-275c-4531-b6fb-d65dd12bb8b6
         -   Entity:
                 Id: 1c805465-0d5d-4e09-8181-408bc612f040
                 Name: Wall0x2x5Window (6)
@@ -4047,7 +4055,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     94d3ee4e6bf3e0ff33a65d875674ea04: !StaticColliderComponent
-                        Id: 0b8bfc11-c304-4df9-b61f-88ae2f464cd1
+                        Id: 9b419d05-5b05-41d5-8835-f8e07557658c
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -4062,6 +4070,10 @@ Hierarchy:
                                 Size: {X: 0.3, Y: 0.1, Z: 0.1}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: e0bc5767-bd8e-40ce-8b9a-23543c33ba36
+                InstanceId: 2999a435-275c-4531-b6fb-d65dd12bb8b6
         -   Entity:
                 Id: 7ee97411-5bce-4303-a42b-885f6a81c7c3
                 Name: Wall0x2x5Window
