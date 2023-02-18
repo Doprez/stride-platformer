@@ -31,9 +31,9 @@ public class AttackState : FSMState
 			await Task.Delay(100);
 		}
 
-		public override Task ExitState()
+		public override async Task ExitState() 
 		{
-				return Task.CompletedTask;
+			await Task.Delay(100);
 		}
 
 		public override async Task UpdateState() 
