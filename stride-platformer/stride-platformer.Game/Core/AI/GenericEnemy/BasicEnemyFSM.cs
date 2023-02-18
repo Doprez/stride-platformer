@@ -2,6 +2,7 @@ using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Doprez.Stride.AI.FSMs;
+using Stride.Animations;
 using Stride.Core.Collections;
 using Stride.Engine;
 using Stride.Physics;
@@ -11,6 +12,11 @@ public class BasicEnemyFSM : FSM
 {
 	public Entity Player{get;set;}
 	public PhysicsComponent AttackTrigger;
+
+	//animations
+	public AnimationClip Idle {get;set;}
+	public AnimationClip Running {get;set;}
+	public AnimationClip Attack{get;set;}
 
 	private Pathfinder _pathfinder;
 	private MoveToState _moveTo;
