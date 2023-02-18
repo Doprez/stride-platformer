@@ -11,30 +11,30 @@ Nodes:
     7e48847c8b768ca7954c04f4146b5e61: {Name: Camera, Depth: 1}
     5b1a1135e2c616f0bdacf6c2bed98db5: {Name: Sphere, Depth: 1}
     60109584797f8b16a920bdeb3dd65d25: {Name: Armature, Depth: 1}
-    86ed26342c3ff1b22f4a35e159e61c14: {Name: Bone, Depth: 2}
-    ad3a3b99a0fea9afd2970ceb88ea19c3: {Name: Bone.001, Depth: 3}
-    21271746e3a0f39830b2669f0ec2898c: {Name: Bone.002, Depth: 4}
-    cff19aa0752446c92409f180348ff0de: {Name: Bone.003, Depth: 5}
-    524ed7555ba118e77a05dfa6b0351cf9: {Name: Bone.003_end, Depth: 6}
-    8c812837123d2f6b2a22b4535d8372d6: {Name: Bone.014, Depth: 4}
-    8426953a30614e17f81c21df92afc7e7: {Name: Bone.015, Depth: 5}
-    880779c89a6cde01d8f88e37c5914da9: {Name: Bone.016, Depth: 6}
-    59ab50d46d07a71430a8c2aa3178efe5: {Name: Bone.016_end, Depth: 7}
-    7df0354034b2c621c363658774a03b35: {Name: Bone.017, Depth: 4}
-    d9985852a766d107c06d4fe2bc5ee500: {Name: Bone.018, Depth: 5}
-    535873231655395e6d12503e3491227a: {Name: Bone.019, Depth: 6}
-    ed93d6818d7fbac865b2aa123941f63e: {Name: Bone.019_end, Depth: 7}
-    4dbc66abfe3c36f3e1b3349e8f437656: {Name: Bone.004, Depth: 2}
-    c876df5dff35e2a3547c0dc3528556c1: {Name: Bone.006, Depth: 3}
-    7393c9fdedbadf4c147bff0fc694e75f: {Name: Bone.008, Depth: 4}
-    9b5e16d1eb45f0d292a1ca04cea87ab7: {Name: Bone.009, Depth: 5}
-    3a48b77539d697e1327f16536a2ab5e1: {Name: Bone.010, Depth: 6}
-    02e8da9e5379e0435fae83d9c7dc2b2e: {Name: Bone.010_end, Depth: 7}
-    ab8e12bc7f57789c3860c79f2741f879: {Name: Bone.005, Depth: 2}
-    d1518ec16585c67289c9596a4ced9d97: {Name: Bone.007, Depth: 3}
-    d46390769de97beb7ae398d7d8a1d99b: {Name: Bone.011, Depth: 4}
-    3ffed5174376f9ae7dca282512d387dd: {Name: Bone.012, Depth: 5}
-    3ad1b211f5f9f8c35e1f87a0b574e6f1: {Name: Bone.013, Depth: 6}
-    62c238f9240c9b770ccd67844d4a4d04: {Name: Bone.013_end, Depth: 7}
+    e541dcde26fa9a4d96e27a732354fbd1: {Name: LowerSpine, Depth: 2}
+    28e41d47371d8b45721ef18ce3afa954: {Name: UpperSpine, Depth: 3}
+    eef350c9a51b44662dca2f166f56d647: {Name: Neck, Depth: 4}
+    bfe4110e7d458b9139706fd5522a7c21: {Name: Head, Depth: 5}
+    82b56d0ed14f38089031d6aff5566161: {Name: Head_end, Depth: 6}
+    3419cf17abb1c6a30f5406d549ae6bfb: {Name: ShoulderLeft, Depth: 4}
+    8f5f7fe356dd9073676004d39769eda9: {Name: BicepLeft, Depth: 5}
+    943fa1bd501f5aca96e593ecdd2e2b84: {Name: ForearmLeft, Depth: 6}
+    74d349b3ed54f4b9d128955ea8440a9c: {Name: ForearmLeft_end, Depth: 7}
+    d8a7bd9acd6d65059d5f2acdf59a89f4: {Name: ShoulderRight, Depth: 4}
+    62997724b797335430d6fbcdb8cbe4d4: {Name: BicepRight, Depth: 5}
+    a40d5d797d8457c86ddfeb0cff118ea6: {Name: ForearmRight, Depth: 6}
+    2c287076dd26bb27603b0a8655bc99cc: {Name: ForearmRight_end, Depth: 7}
+    b4b2088f4db0cb29a9b3a3e4737d2a0d: {Name: PelvisLeft, Depth: 2}
+    60977b41c1bd96f44553ce626729a414: {Name: ThighLeft, Depth: 3}
+    02d527334b5933891c10631d697040b5: {Name: CalfLeft, Depth: 4}
+    7697758a9f5788e2865f7553f8c81b8a: {Name: AnkleLeft, Depth: 5}
+    452eb4d279ae7945adae6af669d13848: {Name: FootLeft, Depth: 6}
+    a5ebd324bf98b65d21999cd3b9749a6c: {Name: FootLeft_end, Depth: 7}
+    4906a57d2d009c8c9fdc855687a88e21: {Name: PelvisRight, Depth: 2}
+    e2aa789a90b76f0edaaf93c70e08eb94: {Name: ThighRight, Depth: 3}
+    f3e6a6f8c48e26bf47a7d35788794e8d: {Name: CalfRight, Depth: 4}
+    53a6610c1111755ce81b6cbdbc757c1a: {Name: AnkleRight, Depth: 5}
+    352fe67a913f55eaa9e2ac4a6817283f: {Name: FootRight, Depth: 6}
+    068b8c0529637117e2c7427f34326748: {Name: FootRight_end, Depth: 7}
 ~SourceHashes:
-    53aa170bb84fe323a36025c8010389b5~../../../Resources/Model/Trogladyte.fbx: e4a229ccec0d5069aadf998682b43492
+    a818dcaef41df0042fdf5944d385710b~../../../Resources/Model/Trogladyte.fbx: 720e0611776d9860499fec0a501de6ef
