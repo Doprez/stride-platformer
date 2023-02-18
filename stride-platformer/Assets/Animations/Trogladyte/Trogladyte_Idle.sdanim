@@ -1,0 +1,19 @@
+!Animation
+Id: c6eac4e9-ea99-4452-9eb4-2f74e127068f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Animations/Trogladyte/Trogladyte_Idle.fbx
+ClipDuration:
+    Enabled: false
+    StartAnimationTime: 0:00:00:00.0000000
+    EndAnimationTime: 0:00:30:00.0000000
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+RepeatMode: LoopInfinite
+Type: !StandardAnimationAssetType {}
+Skeleton: 2529a331-7a3b-4dc9-b474-848db401d6fc:Models/Trogladyte/Trogladyte Skeleton
+RootMotion: false
+PreviewModel: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
+AnimationTimeMinimum: 0:00:00:00.0000000
+AnimationTimeMaximum: 0:00:00:04.1250000
+~SourceHashes:
+    42ed973908eb79508fa99f2d2ab8a4bd~../../../Resources/Animations/Trogladyte/Trogladyte_Idle.fbx: 93bf8a244e163d2c5dbcd66963533427
