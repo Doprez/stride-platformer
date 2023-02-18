@@ -958,8 +958,12 @@ Hierarchy:
                             f1ee1cd08fc3c950664b6b3afe1441d6: ref!! cf39ad54-2dad-473d-80cf-7bd4dd905bf5
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
                         Id: 5b9673eb-83cc-4dbb-acb6-3c727d7e18d2
-                        AttackTrigger: !StaticColliderComponent ref!! 9b419d05-5b05-41d5-8835-f8e07557658c
                         Player*: ref!! 5fc52dcf-f9f8-4c6d-b32d-3fc989aea8ad
+                        AttackTrigger: !StaticColliderComponent ref!! 9b419d05-5b05-41d5-8835-f8e07557658c
+                        AnimationComponent: null
+                        Idle: c6eac4e9-ea99-4452-9eb4-2f74e127068f:Animations/Trogladyte/Trogladyte_Idle
+                        Running: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
+                        Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
                         Id: 943a36e8-3007-4ace-81b7-f58cb2d988a9
                         TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -4049,9 +4053,9 @@ Hierarchy:
                 Components:
                     1068bfee60240b5cedfc1fcddc71ea39: !TransformComponent
                         Id: cf39ad54-2dad-473d-80cf-7bd4dd905bf5
-                        Position: {X: 0.19466387, Y: 0.82591635, Z: 0.0}
+                        Position: {X: 0.0, Y: 0.002, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 0.01, Y: 0.05, Z: 0.01}
                         Children: {}
                     94d3ee4e6bf3e0ff33a65d875674ea04: !StaticColliderComponent
                         Id: 9b419d05-5b05-41d5-8835-f8e07557658c
@@ -4069,6 +4073,10 @@ Hierarchy:
                                 Size: {X: 0.3, Y: 0.1, Z: 0.1}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    fa90e855c03e784882620b6429284d50: !ModelNodeLinkComponent
+                        Id: ce2209eb-cb6b-4cc9-b60d-0e0cc15ecfa5
+                        Target: ref!! 3799ba8a-6f4e-46a0-bbb1-3ff142fd19b5
+                        NodeName: Head_end
             Base:
                 BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
                 BasePartId: e0bc5767-bd8e-40ce-8b9a-23543c33ba36

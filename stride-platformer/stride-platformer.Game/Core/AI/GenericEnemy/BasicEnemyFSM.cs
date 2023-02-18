@@ -3,6 +3,7 @@ using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Doprez.Stride.AI.FSMs;
 using Stride.Animations;
+using Stride.Core;
 using Stride.Core.Collections;
 using Stride.Engine;
 using Stride.Physics;
@@ -10,12 +11,25 @@ using StridePlatformer.Data;
 
 public class BasicEnemyFSM : FSM
 {
+	[Display("Player Entity")]
+	[DataMember(0)]
 	public Entity Player{get;set;}
+	[Display("Attack Trigger")]
+	[DataMember(1)]
 	public PhysicsComponent AttackTrigger;
 
 	//animations
+	[Display("Animation Component")]
+	[DataMember(20)]
+	public AnimationComponent AnimationComponent { get; set; }
+	[Display("Idle")]
+	[DataMember(21)]
 	public AnimationClip Idle {get;set;}
+	[Display("Run")]
+	[DataMember(22)]
 	public AnimationClip Running {get;set;}
+	[Display("Attack")]
+	[DataMember(23)]
 	public AnimationClip Attack{get;set;}
 
 	private Pathfinder _pathfinder;
