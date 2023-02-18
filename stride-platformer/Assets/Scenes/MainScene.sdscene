@@ -84,7 +84,6 @@ Hierarchy:
         - ref!! 41790a91-421d-4b85-84c8-4df802c40e62
         - ref!! c58ce3b1-05ef-4414-9fdf-474e42deb8e5
         - ref!! 18fd0d48-fe6a-4c62-9a3c-0e9a055e9f09
-        - ref!! e63f5780-c155-46b9-8aee-3f9df55457fd
         - ref!! 6fc01fdc-6fb4-4b05-96c5-e405fcbe8e36
         - ref!! c6feadd7-17b4-4c71-82fb-46aef4b182ff
         - ref!! 1e1a52a3-b910-4459-b197-0b85f3abee0b
@@ -951,7 +950,7 @@ Hierarchy:
                 Components:
                     f86af5e64d82fd20f8715b1538e7d943: !TransformComponent
                         Id: 72c15772-d1c0-43b0-8139-6cd7646a6e7b
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: -0.61451757, Y: 0.0, Z: 4.754531}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: -0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -960,7 +959,7 @@ Hierarchy:
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
                         Id: 5b9673eb-83cc-4dbb-acb6-3c727d7e18d2
                         AttackTrigger: !StaticColliderComponent ref!! 9b419d05-5b05-41d5-8835-f8e07557658c
-                        Player: null
+                        Player*: ref!! 5fc52dcf-f9f8-4c6d-b32d-3fc989aea8ad
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
                         Id: 943a36e8-3007-4ace-81b7-f58cb2d988a9
                         TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -7126,20 +7125,6 @@ Hierarchy:
                 BasePartAsset: 9a24ca1e-9310-48bd-940b-bfcc0fb678b5:BlocksPrefabs/Wall0x2x5Window
                 BasePartId: 2afada92-6bdd-43d2-9806-ce0629937081
                 InstanceId: 3d99abc7-5a9a-46e3-b6c3-172193da3a2e
-        -   Entity:
-                Id: e63f5780-c155-46b9-8aee-3f9df55457fd
-                Name: stride-bot
-                Components:
-                    97476ce0ead53a9d56f4072a0f545033: !TransformComponent
-                        Id: 84f176ff-ee83-451f-be38-26782a9e1905
-                        Position: {X: -3.2782583, Y: 0.0, Z: 4.934735}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    fd02b557f9c509e460a5cfed816b19c6: !ModelComponent
-                        Id: cf27354c-69dd-4d6e-b39a-d53641fe4466
-                        Model: d9160e1a-02ea-40a1-b76a-9c36c51d621d:Models/StrideBot/stride-bot
-                        Materials: {}
         -   Folder: Platform
             Entity:
                 Id: e719834e-b69b-4ffc-8e49-ed7f10d9da6d
