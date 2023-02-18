@@ -1,5 +1,7 @@
 using Stride.Engine;
 
+namespace StridePlatformer.Data;
+
 public class GameScore : StartupScript
 {
 
