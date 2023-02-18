@@ -2,8 +2,8 @@
 Id: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../Resources/Model/Trogladyte.fbx
-Skeleton: null
+Source: !file ../../../Resources/Model/Trogladyte.fbx
+Skeleton: 2529a331-7a3b-4dc9-b474-848db401d6fc:Models/Trogladyte/Trogladyte Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 ScaleImport: 0.1
 Materials:
@@ -13,4 +13,4 @@ Materials:
             Material: bdfe2f8e-be09-4fca-a087-c982cf140d9c:Materials/TrogMaterial
 Modifiers: {}
 ~SourceHashes:
-    d258072825c53778ede11309e328d41a~../../Resources/Model/Trogladyte.fbx: 3b5081729fbf6bf3c9c5377064494fcd
+    2396b6d6f59dd6c7732b8dc6c34b8f8b~../../../Resources/Model/Trogladyte.fbx: e4a229ccec0d5069aadf998682b43492

@@ -993,7 +993,7 @@ Hierarchy:
                         Children: {}
                     f979fd95b96b0b9dc170c7b5ceec1b8e: !ModelComponent
                         Id: 3799ba8a-6f4e-46a0-bbb1-3ff142fd19b5
-                        Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte
+                        Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
                         Materials: {}
             Base:
                 BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster

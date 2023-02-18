@@ -1,0 +1,40 @@
+!Skeleton
+Id: 2529a331-7a3b-4dc9-b474-848db401d6fc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Model/Trogladyte.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.15
+Nodes:
+    47a197a9bed4f666845b1b8ec4136a75: {Name: RootNode, Depth: 0}
+    1c47c97a28233eeeb06f54e021adaabc: {Name: Light, Depth: 1}
+    7e48847c8b768ca7954c04f4146b5e61: {Name: Camera, Depth: 1}
+    5b1a1135e2c616f0bdacf6c2bed98db5: {Name: Sphere, Depth: 1}
+    60109584797f8b16a920bdeb3dd65d25: {Name: Armature, Depth: 1}
+    86ed26342c3ff1b22f4a35e159e61c14: {Name: Bone, Depth: 2}
+    ad3a3b99a0fea9afd2970ceb88ea19c3: {Name: Bone.001, Depth: 3}
+    21271746e3a0f39830b2669f0ec2898c: {Name: Bone.002, Depth: 4}
+    cff19aa0752446c92409f180348ff0de: {Name: Bone.003, Depth: 5}
+    524ed7555ba118e77a05dfa6b0351cf9: {Name: Bone.003_end, Depth: 6}
+    8c812837123d2f6b2a22b4535d8372d6: {Name: Bone.014, Depth: 4}
+    8426953a30614e17f81c21df92afc7e7: {Name: Bone.015, Depth: 5}
+    880779c89a6cde01d8f88e37c5914da9: {Name: Bone.016, Depth: 6}
+    59ab50d46d07a71430a8c2aa3178efe5: {Name: Bone.016_end, Depth: 7}
+    7df0354034b2c621c363658774a03b35: {Name: Bone.017, Depth: 4}
+    d9985852a766d107c06d4fe2bc5ee500: {Name: Bone.018, Depth: 5}
+    535873231655395e6d12503e3491227a: {Name: Bone.019, Depth: 6}
+    ed93d6818d7fbac865b2aa123941f63e: {Name: Bone.019_end, Depth: 7}
+    4dbc66abfe3c36f3e1b3349e8f437656: {Name: Bone.004, Depth: 2}
+    c876df5dff35e2a3547c0dc3528556c1: {Name: Bone.006, Depth: 3}
+    7393c9fdedbadf4c147bff0fc694e75f: {Name: Bone.008, Depth: 4}
+    9b5e16d1eb45f0d292a1ca04cea87ab7: {Name: Bone.009, Depth: 5}
+    3a48b77539d697e1327f16536a2ab5e1: {Name: Bone.010, Depth: 6}
+    02e8da9e5379e0435fae83d9c7dc2b2e: {Name: Bone.010_end, Depth: 7}
+    ab8e12bc7f57789c3860c79f2741f879: {Name: Bone.005, Depth: 2}
+    d1518ec16585c67289c9596a4ced9d97: {Name: Bone.007, Depth: 3}
+    d46390769de97beb7ae398d7d8a1d99b: {Name: Bone.011, Depth: 4}
+    3ffed5174376f9ae7dca282512d387dd: {Name: Bone.012, Depth: 5}
+    3ad1b211f5f9f8c35e1f87a0b574e6f1: {Name: Bone.013, Depth: 6}
+    62c238f9240c9b770ccd67844d4a4d04: {Name: Bone.013_end, Depth: 7}
+~SourceHashes:
+    53aa170bb84fe323a36025c8010389b5~../../../Resources/Model/Trogladyte.fbx: e4a229ccec0d5069aadf998682b43492

@@ -18,7 +18,7 @@ Hierarchy:
                         Children: {}
                     f979fd95b96b0b9dc170c7b5ceec1b8e: !ModelComponent
                         Id: 33aab412-f347-4aeb-ba83-6e9ce310f2a7
-                        Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte
+                        Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
                         Materials: {}
         -   Folder: Enemies
             Entity:
