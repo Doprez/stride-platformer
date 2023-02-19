@@ -14,16 +14,14 @@ public class AttackState : FSMState
 
 		//constructor initiated
 		private PhysicsComponent _attackTrigger;
-		private int _attackDuration = 500;
 
 		//general private vars
 		private Entity _entitycollided;
 		private PlayerData _playerData;
 
-		public AttackState(PhysicsComponent attackTrigger, int attackDuration)
+		public AttackState(PhysicsComponent attackTrigger)
 		{
 			_attackTrigger = attackTrigger;
-			_attackDuration = attackDuration;
 		}
 
 		public override async Task EnterState() 

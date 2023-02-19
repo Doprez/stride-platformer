@@ -72,7 +72,7 @@ public class BasicEnemyFSM : FSM
 		_moveTo = new MoveToState(_pathfinder);
 		_moveTo.Target = Player.Transform.WorldMatrix.TranslationVector;
 
-		_attack = new AttackState(AttackTrigger, 500);
+		_attack = new AttackState(AttackTrigger);
 		_attack.EntityToTryAndHit = Player;
 	}
 
