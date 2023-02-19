@@ -2,7 +2,7 @@
 Id: 1012adfc-72a9-4b66-bb1a-20e428b7d0ff
 SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
-DefaultScene: a2398428-c2fa-456e-bb2f-e04da78fb697:Scenes/MainScene
+DefaultScene: 13f02402-0e3f-407f-abc0-efefdf4eba25:Scenes/WorldScene
 GraphicsCompositor: 797f7b73-f9c5-4ef7-9ce5-3bba5e06f097:GraphicsCompositor
 Defaults:
     - !Stride.Graphics.RenderingSettings,Stride.Graphics
@@ -31,7 +31,7 @@ Defaults:
         BuildSettings:
             CellHeight: 0.3
             CellSize: 0.2
-            TileSize: 8
+            TileSize: 32
             MinRegionArea: 2
             RegionMergeArea: 20
             MaxEdgeLen: 12.0
