@@ -1,0 +1,282 @@
+!SceneAsset
+Id: ea5d3e5c-7798-42ed-9acb-18ccf9522f63
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Parent: 13f02402-0e3f-407f-abc0-efefdf4eba25:Scenes/WorldScene
+Offset: {X: 0.0, Y: -25.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! cbde0bb5-4a86-4318-b224-17b83c68b928
+        - ref!! e5239e25-accc-45a1-9d1e-14e4ba3121df
+        - ref!! f2c2a812-1b20-4358-85b5-e3c26bc5b5dd
+        - ref!! d3b835f6-6e95-4a2f-9768-1bd223ecd5c0
+        - ref!! 4c472f7a-aae1-4b76-85f7-8909d723cb21
+        - ref!! 51151a99-baeb-4a2f-8efe-efef2faa6320
+        - ref!! b8714c6a-a1d3-48c7-b1a7-2a779bb6e79e
+        - ref!! 5a1fb06b-53e3-476c-993f-4ec3f5de7995
+        - ref!! 4cbee083-8735-4727-8d30-22ff05728bd8
+        - ref!! bd48afd5-a49b-4fe2-8b31-54b96dc232bf
+        - ref!! 370a8b86-0fca-481e-8ca4-081c9ee00c47
+        - ref!! 7147793b-3664-4a0e-afeb-1b5aa5a5599b
+        - ref!! df48f8a4-db2a-4a34-afc6-09552766f5ca
+        - ref!! a297ea48-ec6d-4c1a-ac28-eba75d65d107
+        - ref!! fd0c7358-0e28-4da8-bf4f-f43a5b509ba4
+        - ref!! 66a391ed-62ab-49ea-9fb3-484fea0e058e
+        - ref!! b9ec43e9-ed5f-41d9-88a1-c5656cd779f5
+    Parts:
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 370a8b86-0fca-481e-8ca4-081c9ee00c47
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: bb635d52-2098-4f9e-bc61-8679bf4ff4ad
+                        Position: {X: 46.03671, Y: 45.0, Z: -58.470276}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 86da5de8-c8f9-49b8-945e-c44c1a2105b4
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 4c472f7a-aae1-4b76-85f7-8909d723cb21
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: f79d4b18-c256-498b-87b6-a0279fd071e6
+                        Position: {X: -151.7567, Y: 45.0, Z: 138.88062}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: c34e1434-c254-406f-88b4-54ccff4a2d6b
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 4cbee083-8735-4727-8d30-22ff05728bd8
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 7c7fd5ac-df4d-4300-b723-ba61d604f31c
+                        Position: {X: -52.196266, Y: 45.0, Z: 138.88062}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 7ed74e1d-ade8-4132-9be3-6bdbf11e2cd2
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 51151a99-baeb-4a2f-8efe-efef2faa6320
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 89ae573c-740e-4bb7-ab76-5cf921f1fccc
+                        Position: {X: -52.196266, Y: 45.0, Z: -158.0307}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 20e9d7c8-4cc0-4999-a6b0-9d7d8853910e
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 5a1fb06b-53e3-476c-993f-4ec3f5de7995
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 7007eb7b-316a-4f85-b538-6ea01f550587
+                        Position: {X: -52.196266, Y: 45.0, Z: 40.647667}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: df8f5570-8dac-4b49-84aa-f673106abccb
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 66a391ed-62ab-49ea-9fb3-484fea0e058e
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 5b3cc109-d176-478b-9540-7bc73fe2e7bf
+                        Position: {X: 145.15465, Y: 45.0, Z: 40.647667}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 81595bf1-0e47-4146-9895-91e3622927af
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: 7147793b-3664-4a0e-afeb-1b5aa5a5599b
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: d2dd2fbc-3f4c-42c7-a4b0-69c169e6ee05
+                        Position: {X: 46.03671, Y: 45.0, Z: 40.647667}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 7e48ad85-cc5e-4f90-941b-f9b1517f2041
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: a297ea48-ec6d-4c1a-ac28-eba75d65d107
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 88eece81-4673-4e58-97c2-0eb668768f88
+                        Position: {X: 145.15465, Y: 45.0, Z: -158.0307}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: f71d1475-9e73-423c-b955-091fd3f6bf08
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: b8714c6a-a1d3-48c7-b1a7-2a779bb6e79e
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 84d0b643-da4e-498c-a05e-d64b3400de4c
+                        Position: {X: -52.196266, Y: 45.0, Z: -58.470276}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: dca5adfa-82c9-44a0-bb47-d9e54b5bb7c3
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: b9ec43e9-ed5f-41d9-88a1-c5656cd779f5
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: d5241630-f2eb-4f70-bdaa-a4ccaff4c17b
+                        Position: {X: 145.15465, Y: 45.0, Z: 138.88062}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: a4ceea48-5004-4474-abba-afea73f29319
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: bd48afd5-a49b-4fe2-8b31-54b96dc232bf
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: a2eef695-3657-4e82-ad50-a665ca5894ea
+                        Position: {X: 46.03671, Y: 45.0, Z: -158.0307}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 0dc2a237-ae00-4f0e-af47-c64aec0beb89
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Entity:
+                Id: cbde0bb5-4a86-4318-b224-17b83c68b928
+                Name: basic-island-terrain
+                Components:
+                    73b7d2e71c61e5409c70d4a2ce2577d4: !TransformComponent
+                        Id: 18b37728-b5c9-4fe3-b1a7-388c9776e622
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    274199df527c6213dc0f5d332aa232f2: !ModelComponent
+                        Id: f50b190c-1ec7-4986-a26b-fd6c60aa966e
+                        Model: 8457b5a3-3d03-4d03-8674-37f1a4dc5427:Models/basic-island-terrain
+                        Materials:
+                            db90d6f0c4310b0b6c33c91231098d2d~0: bdfe2f8e-be09-4fca-a087-c982cf140d9c:Materials/TrogMaterial
+                    0c47118ed2ba88ebbbb395f00048c6eb: !StaticColliderComponent
+                        Id: 97493c64-49e0-4ca8-b20a-04347ffeae2d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            f5d78f63099d4d0f6a0d15267f68a9af: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 400.0, Y: 50.0, Z: 400.0}
+                                LocalOffset: {X: 0.0, Y: 11.45, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: d3b835f6-6e95-4a2f-9768-1bd223ecd5c0
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 8fa890e1-499c-46e5-82d6-fd03169a2d14
+                        Position: {X: -151.7567, Y: 45.0, Z: 40.647667}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 14d45c94-45d2-4452-996a-9546b501b9c5
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: df48f8a4-db2a-4a34-afc6-09552766f5ca
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: adf4e3b6-986b-4367-a61e-a25cedb7d09e
+                        Position: {X: 46.03671, Y: 45.0, Z: 138.88062}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: 70dce68f-da66-4c8d-b97d-26902b7b17f6
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: e5239e25-accc-45a1-9d1e-14e4ba3121df
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 67dd3211-3b04-4429-b8f5-1208f9e40d65
+                        Position: {X: -151.7567, Y: 45.0, Z: -158.0307}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: dac383a6-0c18-4df7-bd65-538246bf943b
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: f2c2a812-1b20-4358-85b5-e3c26bc5b5dd
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 9df36d4a-d565-4b22-abcc-2c5d45c36ae7
+                        Position: {X: -151.7567, Y: 45.0, Z: -58.470276}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: dded0699-fd3a-4ff6-9289-d6f6ce287677
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
+        -   Folder: NavigationBoxes
+            Entity:
+                Id: fd0c7358-0e28-4da8-bf4f-f43a5b509ba4
+                Name: Navigation bounding box
+                Components:
+                    ace155d6fd0df53400694afe15dedecd: !TransformComponent
+                        Id: 24860a58-39af-471a-a3a9-573ed7e234b2
+                        Position: {X: 145.15465, Y: 45.0, Z: -58.470276}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6d6b217a266da0ae8a7d3f7d64576647: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: e4a74387-d019-4494-9c23-10a5393726f8
+                        Size: {X: 50.0, Y: 10.0, Z: 50.0}
