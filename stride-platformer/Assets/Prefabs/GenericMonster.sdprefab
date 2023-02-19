@@ -5,6 +5,7 @@ Tags: []
 Hierarchy:
     RootParts:
         - ref!! 555bb3ab-045b-4738-8b38-7e96d553c161
+        - ref!! e0bc5767-bd8e-40ce-8b9a-23543c33ba36
     Parts:
         -   Entity:
                 Id: 0e00434c-ac87-4829-997c-3e480ac61afe
@@ -20,8 +21,10 @@ Hierarchy:
                         Id: 33aab412-f347-4aeb-ba83-6e9ce310f2a7
                         Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
                         Materials: {}
-        -   Folder: Enemies
-            Entity:
+                    3d4307a4041135abab198d6b75c6888a: !AnimationComponent
+                        Id: a160e2bb-d566-449b-b89c-7404681947df
+                        Animations: {}
+        -   Entity:
                 Id: 555bb3ab-045b-4738-8b38-7e96d553c161
                 Name: GenericMonster
                 Components:
@@ -32,12 +35,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             e7483ea5f8ecd28b8ac0d9e8ab368b8a: ref!! 345f6e62-3370-4812-8b9b-fd1cd9a7f90c
-                            f1ee1cd08fc3c950664b6b3afe1441d6: ref!! 8e1fec07-2783-466a-b63f-d7f77d23dad5
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
                         Id: aa6e74ec-bdf7-45c7-8334-373464f4b3e4
                         Player: null
                         AttackTrigger: !StaticColliderComponent ref!! 10e333e7-df52-4569-a79b-bf6a084a370e
-                        AnimationComponent: null
+                        AnimationComponent: ref!! a160e2bb-d566-449b-b89c-7404681947df
                         Idle: c6eac4e9-ea99-4452-9eb4-2f74e127068f:Animations/Trogladyte/Trogladyte_Idle
                         Running: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
                         Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
