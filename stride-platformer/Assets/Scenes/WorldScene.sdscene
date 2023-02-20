@@ -138,7 +138,10 @@ Hierarchy:
                         Materials: {}
                     3d4307a4041135abab198d6b75c6888a: !AnimationComponent
                         Id: 101b0cf1-43fe-4566-97da-c2e2a1d848d2
-                        Animations: {}
+                        Animations:
+                            479de1166c9d5eab3a28b4b97d8508b6~Idle: c6eac4e9-ea99-4452-9eb4-2f74e127068f:Animations/Trogladyte/Trogladyte_Idle
+                            37846c2a6fe21e1c9b1f0767777b00d4~Walk: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
+                            9b7530dabbbce42e15462d823c6967a1~Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
             Base:
                 BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
                 BasePartId: 0e00434c-ac87-4829-997c-3e480ac61afe
@@ -408,9 +411,6 @@ Hierarchy:
                         Player*: ref!! 28f4a99a-86ee-4243-902a-f3e232ed8525
                         AttackTrigger: !StaticColliderComponent ref!! f4e75650-bd71-4fdf-8e0b-4271b506bc3f
                         AnimationComponent: ref!! 101b0cf1-43fe-4566-97da-c2e2a1d848d2
-                        Idle: c6eac4e9-ea99-4452-9eb4-2f74e127068f:Animations/Trogladyte/Trogladyte_Idle
-                        Running: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
-                        Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
                         Id: f5587ffb-b9a9-425b-b5f0-516ccd6e97de
                         TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}

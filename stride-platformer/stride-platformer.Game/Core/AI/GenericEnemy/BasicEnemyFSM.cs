@@ -22,15 +22,6 @@ public class BasicEnemyFSM : FSM
 	[Display("Animation Component")]
 	[DataMember(20)]
 	public AnimationComponent AnimationComponent { get; set; }
-	[Display("Idle")]
-	[DataMember(21)]
-	public AnimationClip Idle {get;set;}
-	[Display("Run")]
-	[DataMember(22)]
-	public AnimationClip Running {get;set;}
-	[Display("Attack")]
-	[DataMember(23)]
-	public AnimationClip Attack{get;set;}
 
 	private Pathfinder _pathfinder;
 	private MoveToState _moveTo;
