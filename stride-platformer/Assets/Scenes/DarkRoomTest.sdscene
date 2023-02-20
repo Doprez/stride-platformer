@@ -44,6 +44,37 @@ Hierarchy:
                 BasePartId: 15780158-a035-440b-a7f3-0c31ea4061d8
                 InstanceId: c06b8645-1fab-44fa-9aa0-caa0fd6cbaeb
         -   Entity:
+                Id: 68b286c2-ca7f-4263-a52b-926fb2cd96ef
+                Name: Voxel volume
+                Components:
+                    a696e18972c9067b95bdc874b1da79b1: !TransformComponent
+                        Id: b095458a-35a1-421c-a763-4b57dd565fa5
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    08e7ad1ea219ce756b3dc1f3834e54be: !VoxelVolumeComponent
+                        Id: 95085715-a3a5-4ff3-87ea-9854f0b47c4a
+                        Voxelize: true
+                        VoxelizationMethod: !Stride.Rendering.Voxels.VoxelizationMethodDominantAxis,Stride.Voxels
+                            MultisampleCount: X8
+                        Storage: !Stride.Rendering.Voxels.VoxelStorageClipmaps,Stride.Voxels
+                            ClipResolution: x128
+                            UpdatesPerFrame: SingleClipmap
+                            DownsampleFinerClipMaps: true
+                        Attributes:
+                            32aeed0e77bb366529a71974697af010: !Stride.Rendering.Voxels.VoxelAttributeDirectionalCoverage,Stride.Voxels {}
+                        VoxelVolumeSize: 10.0
+                        AproximateVoxelSize: 0.15
+                        VoxelGridSnapping: true
+                        VisualizeVoxels: true
+                        VisualizeIndex: 0
+                        Visualization: null
+            Base:
+                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
+                BasePartId: 07413342-0265-46d3-8893-5e2a088ac23d
+                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
+        -   Entity:
                 Id: 6b1b9819-355a-44cd-992c-961f6bd3d145
                 Name: StreetLight
                 Components:
@@ -55,8 +86,6 @@ Hierarchy:
                         Children:
                             f771ccea9a0351eb530b434a7069d202: ref!! 65f2aed0-f4af-495e-bf94-494e83a57781
                             7b1512514ce08aebc9542f3527fff95d: ref!! 05159681-2328-4590-9501-dfd35a173641
-                            a454a6b7030176aac0c4a34fee098a80: ref!! 68051be6-6be8-4bd4-92b2-b4f870ef36e4
-                            5220967a1cc9dbec7d4583d13f804e16: ref!! 627891b3-9390-436e-b71c-9c2dbedef59e
             Base:
                 BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
                 BasePartId: adc63581-cd23-4767-a57c-7e7f6666933d
@@ -77,36 +106,6 @@ Hierarchy:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: ecd1ef44-44ee-420a-a0aa-31676d416484
                 InstanceId: c06b8645-1fab-44fa-9aa0-caa0fd6cbaeb
-        -   Folder: null
-            Entity:
-                Id: 7a2b85e3-7aeb-416c-8c70-c5716cb1c711
-                Name: Spot light
-                Components:
-                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
-                        Id: 627891b3-9390-436e-b71c-9c2dbedef59e
-                        Position: {X: 0.0, Y: 5.3322735, Z: -2.706634}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
-                        Id: 0ef40b21-9488-4d4a-881f-8d73397fa57c
-                        Type: !LightSpot
-                            Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Range: 6.0
-                            AngleInner: 90.0
-                            AngleOuter: 90.0
-                            UVScale: {X: 1.0, Y: 1.0}
-                            UVOffset: {X: 0.0, Y: 0.0}
-                            TransitionArea: 1.0
-                            Shadow:
-                                BiasParameters:
-                                    DepthBias: 0.001
-                        Intensity: 15.0
-            Base:
-                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
-                BasePartId: e0ee9180-a7e5-4483-97e0-086e51d85e93
-                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
         -   Entity:
                 Id: a1d066b5-2245-4aac-ad41-e2c6461e8572
                 Name: Floor1x0x1
@@ -250,36 +249,6 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Folder: null
             Entity:
-                Id: de95b1a3-f1d0-4943-b999-07f58c9a00da
-                Name: Spot light
-                Components:
-                    e4c3c7e00540764e6622495cbec27e57: !TransformComponent
-                        Id: 68051be6-6be8-4bd4-92b2-b4f870ef36e4
-                        Position: {X: 0.0, Y: 5.3322735, Z: -0.16326843}
-                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
-                        Id: 0784e4d4-aa06-4d03-818a-71c2f8278586
-                        Type: !LightSpot
-                            Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Range: 6.0
-                            AngleInner: 90.0
-                            AngleOuter: 90.0
-                            UVScale: {X: 1.0, Y: 1.0}
-                            UVOffset: {X: 0.0, Y: 0.0}
-                            TransitionArea: 1.0
-                            Shadow:
-                                BiasParameters:
-                                    DepthBias: 0.001
-                        Intensity: 15.0
-            Base:
-                BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
-                BasePartId: 3a02ce44-8c99-4f2d-b197-750d4a13d459
-                InstanceId: ff94510a-88fe-434e-ac6c-81154da77b74
-        -   Folder: null
-            Entity:
                 Id: e695a7cc-e8d3-432d-8755-fbf0573d2c74
                 Name: Camera
                 Components:
@@ -318,22 +287,29 @@ Hierarchy:
                         Position: {X: 0.0, Y: 5.3322735, Z: -1.2295048}
                         Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
+                        Children:
+                            033e2f21d86d93b40859de754dfcad03: ref!! b095458a-35a1-421c-a763-4b57dd565fa5
                     b50f94c2a8130f9c32ed2ba3fc0c4665: !LightComponent
                         Id: f1be62fa-1503-4658-8880-5853cf842660
-                        Type: !LightSpot
-                            Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Range: 6.0
-                            AngleInner: 90.0
-                            AngleOuter: 90.0
-                            UVScale: {X: 1.0, Y: 1.0}
-                            UVOffset: {X: 0.0, Y: 0.0}
-                            TransitionArea: 1.0
-                            Shadow:
-                                BiasParameters:
-                                    DepthBias: 0.001
-                        Intensity: 15.0
+                        Type: !LightVoxel
+                            Volume: ref!! 95085715-a3a5-4ff3-87ea-9854f0b47c4a
+                            AttributeIndex: 0
+                            DiffuseMarcher: !Stride.Rendering.Voxels.VoxelMarchSetHemisphere6,Stride.Voxels
+                                Marcher: !Stride.Rendering.Voxels.VoxelMarchConePerMipmap,Stride.Voxels
+                                    Steps: 7
+                                    ConeRatio: 1.0
+                                    StartOffset: 0.5
+                                Offset: 1.0
+                            SpecularMarcher: !Stride.Rendering.Voxels.VoxelMarchCone,Stride.Voxels
+                                EditMode: true
+                                Fast: false
+                                Steps: 9
+                                StepScale: 1.0
+                                ConeRatio: 1.0
+                                StartOffset: 1.0
+                            BounceIntensityScale: 0.0
+                            SpecularIntensityScale: 0.0
+                        Intensity: 49.0
             Base:
                 BasePartAsset: 37968bfa-7762-445c-8a6e-00b49f374931:Prefabs/StreetLight
                 BasePartId: 9d3ff505-a968-4b2f-bea0-cb40a44597ac
