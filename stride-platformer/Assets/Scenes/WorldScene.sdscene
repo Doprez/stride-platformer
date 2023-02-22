@@ -255,6 +255,36 @@ Hierarchy:
                             5113de4feabf3d9686e55f1a6ad2f98d: ref!! a23ae70e-3234-49fa-a4e3-f53563a731a6
                             196d0a4d445a1d57813adff36a40c8c3: ref!! b517b0d2-56ac-426b-84ce-be2dd2100977
         -   Entity:
+                Id: 875373b6-c6e1-4e9d-8aef-ecc3315ffe84
+                Name: PlayerSeenTrigger
+                Components:
+                    65deab63eae29d91e4ae5a7f532cc67e: !TransformComponent
+                        Id: 44f67454-8d9e-4fad-b6ce-cbc7765854bd
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f1dbcd02f4514c5b979270b14a79bf0c: !StaticColliderComponent
+                        Id: 4ff625a6-86cc-43cb-89bc-66b81078f236
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            c939b6bfe4e49a602d86f22afde002a0: !CylinderColliderShapeDesc
+                                Height: 3.0
+                                Radius: 10.0
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: 143cb65f-3fd6-4fdd-ac74-66adb1a50e0b
+                InstanceId: 5d98633f-6389-4cfe-be6a-c2f557755e6e
+        -   Entity:
                 Id: b230ea29-19a8-48a5-b9b0-98dd1c6dedea
                 Name: StrideBotPlayer
                 Components:
@@ -406,10 +436,12 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             e7483ea5f8ecd28b8ac0d9e8ab368b8a: ref!! 260d73a8-1b45-46fa-95ac-a4c6150870d1
+                            d827e72d832745b926f25578af2dc412: ref!! 44f67454-8d9e-4fad-b6ce-cbc7765854bd
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
                         Id: 9272b475-6355-4781-8546-0d3bbee7530b
-                        Player*: ref!! 28f4a99a-86ee-4243-902a-f3e232ed8525
+                        Player*: null
                         AttackTrigger: !StaticColliderComponent ref!! f4e75650-bd71-4fdf-8e0b-4271b506bc3f
+                        PlayerSeenTrigger: !StaticColliderComponent ref!! 4ff625a6-86cc-43cb-89bc-66b81078f236
                         AnimationComponent: ref!! 101b0cf1-43fe-4566-97da-c2e2a1d848d2
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
                         Id: f5587ffb-b9a9-425b-b5f0-516ccd6e97de

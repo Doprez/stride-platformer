@@ -28,6 +28,32 @@ Hierarchy:
                             37846c2a6fe21e1c9b1f0767777b00d4~Walk: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
                             9b7530dabbbce42e15462d823c6967a1~Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
         -   Entity:
+                Id: 143cb65f-3fd6-4fdd-ac74-66adb1a50e0b
+                Name: PlayerSeenTrigger
+                Components:
+                    65deab63eae29d91e4ae5a7f532cc67e: !TransformComponent
+                        Id: f7924461-4666-46ae-82c8-67abe0e8a0b0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f1dbcd02f4514c5b979270b14a79bf0c: !StaticColliderComponent
+                        Id: 15ade9c7-449a-4396-aded-8c66cc73b58e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            c939b6bfe4e49a602d86f22afde002a0: !CylinderColliderShapeDesc
+                                Height: 3.0
+                                Radius: 10.0
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
                 Id: 555bb3ab-045b-4738-8b38-7e96d553c161
                 Name: GenericMonster
                 Components:
@@ -38,10 +64,12 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             e7483ea5f8ecd28b8ac0d9e8ab368b8a: ref!! 345f6e62-3370-4812-8b9b-fd1cd9a7f90c
+                            147cc8b916c989bbfd2bf9d1326db2f6: ref!! f7924461-4666-46ae-82c8-67abe0e8a0b0
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
                         Id: aa6e74ec-bdf7-45c7-8334-373464f4b3e4
                         Player: null
                         AttackTrigger: !StaticColliderComponent ref!! 10e333e7-df52-4569-a79b-bf6a084a370e
+                        PlayerSeenTrigger: !StaticColliderComponent ref!! 15ade9c7-449a-4396-aded-8c66cc73b58e
                         AnimationComponent: ref!! a160e2bb-d566-449b-b89c-7404681947df
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
                         Id: 2d8ee278-6e96-44a6-a7f8-0ba134427a11
