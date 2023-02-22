@@ -8,6 +8,7 @@ using Stride.Core.Collections;
 using Stride.Engine;
 using Stride.Physics;
 using StridePlatformer.Data;
+using StridePlatformer.States;
 
 public class BasicEnemyFSM : FSM
 {
@@ -17,15 +18,20 @@ public class BasicEnemyFSM : FSM
 	[Display("Attack Trigger")]
 	[DataMember(1)]
 	public PhysicsComponent AttackTrigger;
+	[Display("Player Seen Trigger")]
+	[DataMember(2)]
+	public PhysicsComponent PlayerSeenTrigger;
 
-	//animations
 	[Display("Animation Component")]
 	[DataMember(20)]
 	public AnimationComponent AnimationComponent { get; set; }
 
 	private Pathfinder _pathfinder;
+
+	//States
 	private MoveToState _moveTo;
 	private AttackState _attack;
+	private IdleState _idle;
 
 
 	public override void Initialize()
@@ -36,17 +42,15 @@ public class BasicEnemyFSM : FSM
 			throw new InvalidOperationException("The Pathfinder component is not set");
 
 		InitializeStates();
-		
-		AttackTrigger.Collisions.CollectionChanged += CollisionsChanged;
 
-		SetCurrentState(_moveTo);
+		SetCurrentState(_idle);
 	}
 
 	public override async Task AsyncUpdate()
 	{
 		await Task.Delay(100);
 
-		if(Player.GetDistanceBetweenVectors(Entity.Transform.Position, Player.Transform.Position) > 0.5f)
+		/*if(Player.GetDistanceBetweenVectors(Entity.Transform.Position, Player.Transform.Position) > 0.5f)
 		{
 			_moveTo.Target = Player.Transform.WorldMatrix.TranslationVector;
 
@@ -55,36 +59,22 @@ public class BasicEnemyFSM : FSM
 		else
 		{
 			SetCurrentState(_attack);
-		}
+		}*/
 	}
 
 	private void InitializeStates()
 	{
-		_moveTo = new MoveToState(_pathfinder);
-		_moveTo.Target = Player.Transform.WorldMatrix.TranslationVector;
+		_moveTo = new MoveToState(_pathfinder, AnimationComponent);
+		//_moveTo.Target = Player.Transform.WorldMatrix.TranslationVector;
+		_moveTo.FiniteStateMachine = this;
 
-		_attack = new AttackState(AttackTrigger);
+		_attack = new AttackState(AttackTrigger, AnimationComponent);
 		_attack.EntityToTryAndHit = Player;
-	}
+		_attack.FiniteStateMachine = this;
 
-	private void CollisionsChanged(object sender, TrackingCollectionChangedEventArgs args) 
-	{
-		// Cast the argument 'item' to a collision object
-		var collision = (Collision)args.Item;
-
-		// We need to make sure which collision object is not the Trigger collider
-		// We perform a little check to find the ballCollider 
-		var playerCollider = AttackTrigger == collision.ColliderA ? collision.ColliderB : collision.ColliderA;
-
-		if (args.Action == NotifyCollectionChangedAction.Add) 
-		{
-			// When a collision has been added to the collision collection, we know an object has 'entered' our trigger
-			if (playerCollider.Entity.Name == "PlayerCharacter") 
-			{
-				var entitycollided = playerCollider.Entity;
-				entitycollided.Get<PlayerData>().PlayerHealth -= 10;
-			}
-		}
+		_idle = new IdleState(AnimationComponent, _moveTo);
+		_idle.PlayerSeenTrigger = PlayerSeenTrigger;
+		_idle.FiniteStateMachine = this;
 	}
 	
 }
