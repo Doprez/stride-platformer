@@ -7,6 +7,8 @@ using Stride.Engine;
 using Stride.Physics;
 using StridePlatformer.Data;
 
+namespace StridePlatformer.States;
+
 public class AttackState : FSMState
 {
 
@@ -17,11 +19,13 @@ public class AttackState : FSMState
 
 		//general private vars
 		private Entity _entitycollided;
+		private AnimationComponent _animationComponent;
 		private PlayerData _playerData;
 
-		public AttackState(PhysicsComponent attackTrigger)
+		public AttackState(PhysicsComponent attackTrigger, AnimationComponent animationComponent)
 		{
 			_attackTrigger = attackTrigger;
+			_animationComponent = animationComponent;
 		}
 
 		public override async Task EnterState() 
