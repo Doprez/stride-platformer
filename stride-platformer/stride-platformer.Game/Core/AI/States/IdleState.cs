@@ -15,10 +15,13 @@ public class IdleState : FSMState
 	private AnimationComponent _animationComponent;
 	private MoveToState _moveTo;
 
-	public IdleState(AnimationComponent animationComponent, MoveToState moveTo)
+	public IdleState(FSM fsm, AnimationComponent animationComponent, MoveToState moveTo)
 	{
+		FiniteStateMachine = fsm;
 		_animationComponent = animationComponent;
 		_moveTo = moveTo;
+
+		//FiniteStateMachine.States.Add((int)EnemyStates.Idle, this);
 	}
 
 	public override Task EnterState()

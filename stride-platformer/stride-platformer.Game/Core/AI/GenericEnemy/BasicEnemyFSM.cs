@@ -46,35 +46,20 @@ public class BasicEnemyFSM : FSM
 		SetCurrentState(_idle);
 	}
 
-	public override async Task AsyncUpdate()
+	public override Task AsyncUpdate()
 	{
-		await Task.Delay(100);
-
-		/*if(Player.GetDistanceBetweenVectors(Entity.Transform.Position, Player.Transform.Position) > 0.5f)
-		{
-			_moveTo.Target = Player.Transform.WorldMatrix.TranslationVector;
-
-			SetCurrentState(_moveTo);
-		}
-		else
-		{
-			SetCurrentState(_attack);
-		}*/
+		return Task.CompletedTask;
 	}
 
 	private void InitializeStates()
 	{
-		_moveTo = new MoveToState(_pathfinder, AnimationComponent);
-		//_moveTo.Target = Player.Transform.WorldMatrix.TranslationVector;
-		_moveTo.FiniteStateMachine = this;
+		_moveTo = new MoveToState(this, _pathfinder, AnimationComponent);
 
-		_attack = new AttackState(AttackTrigger, AnimationComponent);
+		_attack = new AttackState(this, AttackTrigger, AnimationComponent);
 		_attack.EntityToTryAndHit = Player;
-		_attack.FiniteStateMachine = this;
 
-		_idle = new IdleState(AnimationComponent, _moveTo);
+		_idle = new IdleState(this, AnimationComponent, _moveTo);
 		_idle.PlayerSeenTrigger = PlayerSeenTrigger;
-		_idle.FiniteStateMachine = this;
 	}
 	
 }

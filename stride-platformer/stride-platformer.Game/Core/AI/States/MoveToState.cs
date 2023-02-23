@@ -12,10 +12,13 @@ public class MoveToState : FSMState
     private readonly Pathfinder _pathfinder;
 	private readonly AnimationComponent _animationComponent;
 
-    public MoveToState(Pathfinder pathfinder, AnimationComponent animationComponent)
+    public MoveToState(FSM fsm, Pathfinder pathfinder, AnimationComponent animationComponent)
     {
+        FiniteStateMachine = fsm;
         _pathfinder = pathfinder;
         _animationComponent = animationComponent;
+
+		//FiniteStateMachine.States.Add((int)EnemyStates.Walk, this);
     }
 
     public override async Task EnterState()

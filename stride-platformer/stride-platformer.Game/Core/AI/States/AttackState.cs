@@ -12,35 +12,38 @@ namespace StridePlatformer.States;
 public class AttackState : FSMState
 {
 
-		public Entity EntityToTryAndHit;
+	public Entity EntityToTryAndHit;
 
-		//constructor initiated
-		private PhysicsComponent _attackTrigger;
+	//constructor initiated
+	private PhysicsComponent _attackTrigger;
 
-		//general private vars
-		private Entity _entitycollided;
-		private AnimationComponent _animationComponent;
-		private PlayerData _playerData;
+	//general private vars
+	private Entity _entitycollided;
+	private AnimationComponent _animationComponent;
+	private PlayerData _playerData;
 
-		public AttackState(PhysicsComponent attackTrigger, AnimationComponent animationComponent)
-		{
-			_attackTrigger = attackTrigger;
-			_animationComponent = animationComponent;
-		}
+	public AttackState(FSM fsm, PhysicsComponent attackTrigger, AnimationComponent animationComponent)
+	{
+		FiniteStateMachine = fsm;
+		_attackTrigger = attackTrigger;
+		_animationComponent = animationComponent;
 
-		public override async Task EnterState() 
-		{
-			await Task.Delay(100);
-		}
+		//FiniteStateMachine.States.Add((int)EnemyStates.Attack01, this);
+	}
 
-		public override async Task ExitState() 
-		{
-			await Task.Delay(100);
-		}
+	public override async Task EnterState() 
+	{
+		await Task.Delay(100);
+	}
 
-		public override async Task UpdateState() 
-		{
-			await Task.Delay(100);
-		}
+	public override async Task ExitState() 
+	{
+		await Task.Delay(100);
+	}
+
+	public override async Task UpdateState() 
+	{
+		await Task.Delay(100);
+	}
 		
 }
