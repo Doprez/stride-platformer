@@ -2718,11 +2718,11 @@ Hierarchy:
                         Id: a2d384ab-bfa8-4be4-ab12-b31cb36d8c41
                         Enabled: false
                         Type: !LightSkybox
-                            Skybox: e3685ec6-67d7-421e-ba4d-dccd6fabbaaa:Skybox
+                            Skybox: null
                         Intensity: 1.5
                     f6397b90285248a39a30d9f6245a9f87: !BackgroundComponent
                         Id: 44344188-916a-43d7-b7d0-68e8560b4c85
-                        Texture: ae5b503b-dfaa-4755-a9de-362a89a34b4d:eso0932a
+                        Texture: null
                         Intensity: 0.0
         -   Entity:
                 Id: c1868036-b3b3-4660-a6fd-fc73c7d6dcf5

@@ -1,7 +1,0 @@
-!Texture
-Id: 351af07d-bb19-4fdd-b05e-8a8236c9df2f
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../../../Users/User/Pictures/satara_night_no_lamps.jpg
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
