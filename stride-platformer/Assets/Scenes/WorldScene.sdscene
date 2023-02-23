@@ -222,7 +222,7 @@ Hierarchy:
                         Intensity: 1.5
                     f6397b90285248a39a30d9f6245a9f87: !BackgroundComponent
                         Id: 8767f886-bee8-4660-b373-3b5232790786
-                        Texture: 5db762bc-bfb5-4823-b5f6-798f196b05d2:Textures/Skybox Texture
+                        Texture: b3d47a4e-290e-476b-a6c0-f99129c6cfb7:Textures/space-sky
                         Intensity: 3.0
         -   Entity:
                 Id: d45cf2d4-6e6f-4e08-8a88-55f987000d0b
@@ -291,6 +291,7 @@ Hierarchy:
                         Children: {}
                     209f95c46d53de41a3dfff661934ae6c: !LightComponent
                         Id: 8640ad7c-c236-4522-a428-50b2a598c82c
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
