@@ -21,7 +21,7 @@ public class IdleState : FSMState
 		_animationComponent = animationComponent;
 		_moveTo = moveTo;
 
-		//FiniteStateMachine.States.Add((int)EnemyStates.Idle, this);
+		FiniteStateMachine.States.Add((int)EnemyStates.Idle, this);
 	}
 
 	public override Task EnterState()
@@ -37,9 +37,10 @@ public class IdleState : FSMState
 		return Task.CompletedTask;
 	}
 
-	public override Task UpdateState()
+	public override async Task UpdateState()
 	{
-		return Task.CompletedTask;
+		//Need to have an awaitable method or else the program gets stuck here and wont render.
+		await Task.Delay(100);
 	}
 
 	private void CollisionsChanged(object sender, TrackingCollectionChangedEventArgs args)
