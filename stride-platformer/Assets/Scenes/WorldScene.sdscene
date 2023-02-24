@@ -12,6 +12,7 @@ Hierarchy:
         - ref!! bf04cd3e-0d7d-4e20-8251-8746b5ecc99d
         - ref!! b230ea29-19a8-48a5-b9b0-98dd1c6dedea
         - ref!! b85d7098-093d-4691-ab7f-df3fb396078a
+        - ref!! a8598aca-6b4f-4915-91ae-a4daa11b1578
     Parts:
         -   Entity:
                 Id: 06fe43f1-23b1-4397-b21a-41c0d7b0ddf4
@@ -153,6 +154,36 @@ Hierarchy:
                 BasePartId: 2975d9b9-967d-47e1-865b-eadfc0ece3d9
                 InstanceId: b552f304-b2eb-4a59-a65f-3cb918c690a0
         -   Entity:
+                Id: 62522373-03e7-464a-aead-8c556c586bb7
+                Name: PlayerSeenTrigger
+                Components:
+                    65deab63eae29d91e4ae5a7f532cc67e: !TransformComponent
+                        Id: b4f50578-000e-435c-95a6-2506a91cbde5
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f1dbcd02f4514c5b979270b14a79bf0c: !StaticColliderComponent
+                        Id: 9471c93c-0f9b-46c2-9fe3-8eef51122ce0
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            c939b6bfe4e49a602d86f22afde002a0: !CylinderColliderShapeDesc
+                                Height: 3.0
+                                Radius: 10.0
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: 143cb65f-3fd6-4fdd-ac74-66adb1a50e0b
+                InstanceId: 4c58f64b-3696-4131-b310-ce754f7ad222
+        -   Entity:
                 Id: 77148fc5-294d-4edd-813d-ab1af82e280d
                 Name: Camera
                 Components:
@@ -182,6 +213,52 @@ Hierarchy:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: 0442b263-d9c8-40fc-85c8-39394564e7f6
                 InstanceId: b552f304-b2eb-4a59-a65f-3cb918c690a0
+        -   Entity:
+                Id: 82dddc8a-0f83-4f8c-9c7c-801a3ce69af4
+                Name: AttackTrigger
+                Components:
+                    1068bfee60240b5cedfc1fcddc71ea39: !TransformComponent
+                        Id: 240f6b78-222c-460a-b3cc-479b00e9636b
+                        Position: {X: 0.0, Y: 0.002, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.01, Y: 0.05, Z: 0.01}
+                        Children: {}
+                    94d3ee4e6bf3e0ff33a65d875674ea04: !StaticColliderComponent
+                        Id: 763ccdaa-e275-4677-92a2-5654828a47fe
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            62d2a1e80e9b2494b4a2e81d89983531: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 0.3, Y: 0.1, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    fa90e855c03e784882620b6429284d50: !ModelNodeLinkComponent
+                        Id: ba36b871-94d6-45d0-b4e0-4e9dccc72d7e
+                        Target: ref!! 77347833-ba26-42c3-a4b1-7dcf2667de8a
+                        NodeName: Head_end
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: e0bc5767-bd8e-40ce-8b9a-23543c33ba36
+                InstanceId: 4c58f64b-3696-4131-b310-ce754f7ad222
+        -   Entity:
+                Id: a8598aca-6b4f-4915-91ae-a4daa11b1578
+                Name: GenericMonster
+                Components:
+                    666054c6d6979e6f65adca464eb4157d: !TransformComponent
+                        Id: a3705a13-705a-4279-a498-0ddda83d4e0b
+                        Position: {X: -11.44353, Y: 11.979179, Z: -18.650562}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            bcee1e6953b0b4d3bda2f7494ac79278: ref!! e0214a01-9c80-4c66-a88e-ed5e4fdbf118
+                            7056517df30e0469de6ebef62375cd22: ref!! 240f6b78-222c-460a-b3cc-479b00e9636b
         -   Entity:
                 Id: b230ea29-19a8-48a5-b9b0-98dd1c6dedea
                 Name: StrideBotPlayer
@@ -306,6 +383,57 @@ Hierarchy:
                                 BiasParameters:
                                     DepthBias: 0.0015
                         Intensity: 5.0
+        -   Entity:
+                Id: e37565fc-95ad-47e6-9d38-cab7436aa2c0
+                Name: GenericMonster
+                Components:
+                    f86af5e64d82fd20f8715b1538e7d943: !TransformComponent
+                        Id: e0214a01-9c80-4c66-a88e-ed5e4fdbf118
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: -0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            e7483ea5f8ecd28b8ac0d9e8ab368b8a: ref!! 09b88b36-97e7-4315-994d-c0aad4790500
+                            147cc8b916c989bbfd2bf9d1326db2f6: ref!! b4f50578-000e-435c-95a6-2506a91cbde5
+                    7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
+                        Id: 6029c6a6-7081-4b8b-9310-af3070981069
+                        Player*: ref!! 28f4a99a-86ee-4243-902a-f3e232ed8525
+                        AttackTrigger: !StaticColliderComponent ref!! 763ccdaa-e275-4677-92a2-5654828a47fe
+                        PlayerSeenTrigger: !StaticColliderComponent ref!! 9471c93c-0f9b-46c2-9fe3-8eef51122ce0
+                        AnimationComponent: ref!! 091313b9-e494-497a-b98f-fe0c4b9e221b
+                    8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
+                        Id: 8e745df6-0199-409e-b454-6c2b9862283b
+                        TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+                        MovementSpeed: 3.0
+                        NavGroupName: GenericMonster
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: 555bb3ab-045b-4738-8b38-7e96d553c161
+                InstanceId: 4c58f64b-3696-4131-b310-ce754f7ad222
+        -   Entity:
+                Id: e6e6b3ee-e145-45b9-bd19-71bf6b09617c
+                Name: Trogladyte
+                Components:
+                    97954a8eb95bd0afd7be842d2e8ef005: !TransformComponent
+                        Id: 09b88b36-97e7-4315-994d-c0aad4790500
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f979fd95b96b0b9dc170c7b5ceec1b8e: !ModelComponent
+                        Id: 77347833-ba26-42c3-a4b1-7dcf2667de8a
+                        Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
+                        Materials: {}
+                    3d4307a4041135abab198d6b75c6888a: !AnimationComponent
+                        Id: 091313b9-e494-497a-b98f-fe0c4b9e221b
+                        Animations:
+                            479de1166c9d5eab3a28b4b97d8508b6~Idle: c6eac4e9-ea99-4452-9eb4-2f74e127068f:Animations/Trogladyte/Trogladyte_Idle
+                            37846c2a6fe21e1c9b1f0767777b00d4~Walk: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
+                            9b7530dabbbce42e15462d823c6967a1~Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
+            Base:
+                BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
+                BasePartId: 0e00434c-ac87-4829-997c-3e480ac61afe
+                InstanceId: 4c58f64b-3696-4131-b310-ce754f7ad222
         -   Entity:
                 Id: fab30405-35c9-47a7-b66f-04372597b05b
                 Name: Coin
