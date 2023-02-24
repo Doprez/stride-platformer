@@ -4,7 +4,7 @@ SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
 ChildrenIds: []
 Parent: 13f02402-0e3f-407f-abc0-efefdf4eba25:Scenes/WorldScene
-Offset: {X: 0.0, Y: -34.0, Z: 0.0}
+Offset: {X: 0.0, Y: -25.0, Z: 0.0}
 Hierarchy:
     RootParts:
         - ref!! cbde0bb5-4a86-4318-b224-17b83c68b928
