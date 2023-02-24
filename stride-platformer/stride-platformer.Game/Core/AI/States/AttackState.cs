@@ -28,7 +28,7 @@ public class AttackState : FSMState
 		_attackTrigger = attackTrigger;
 		_animationComponent = animationComponent;
 
-		//FiniteStateMachine.States.Add((int)EnemyStates.Attack01, this);
+		FiniteStateMachine.States.Add((int)EnemyStates.Attack01, this);
 	}
 
 	public override async Task EnterState() 

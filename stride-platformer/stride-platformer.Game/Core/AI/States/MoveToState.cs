@@ -18,7 +18,7 @@ public class MoveToState : FSMState
         _pathfinder = pathfinder;
         _animationComponent = animationComponent;
 
-		//FiniteStateMachine.States.Add((int)EnemyStates.Walk, this);
+		FiniteStateMachine.States.Add((int)EnemyStates.Walk, this);
     }
 
     public override async Task EnterState()
