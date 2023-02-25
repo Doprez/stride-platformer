@@ -9,7 +9,7 @@ Materials:
     e1ef7f786b02baecc1bd3c2af34a4be8:
         Name: Material
         MaterialInstance:
-            Material: null
+            Material: 0543c641-fe07-45b3-babe-652e2f99356c:Materials/Material
 Modifiers: {}
 ~SourceHashes:
     cc38b59ad40f9ef9c8093e338f4a4683~../../Resources/Model/basic-island-terrain.fbx: 7710fe0e6b39a50c22b49c1ee83185d4
