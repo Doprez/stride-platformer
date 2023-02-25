@@ -29,4 +29,9 @@ public class GameStateService
 		return CoinsInScene.Count;
 	}
 
+	public void CollectCoin(Entity coin)
+	{
+		coin.FindRoot().DestroyEntity();
+	}
+
 }
