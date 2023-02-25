@@ -34,7 +34,7 @@ public class BasicEnemyFSM : FSM
 	private IdleState _idle;
 
 
-	public override void Initialize()
+	public override void Start()
 	{
 		_pathfinder = Entity.Get<Pathfinder>();
 
@@ -44,11 +44,6 @@ public class BasicEnemyFSM : FSM
 		InitializeStates();
 
 		SetCurrentState(_idle);
-	}
-
-	public override Task AsyncUpdate()
-	{
-		return Task.CompletedTask;
 	}
 
 	private void InitializeStates()
@@ -61,5 +56,9 @@ public class BasicEnemyFSM : FSM
 		_idle = new IdleState(this, AnimationComponent, _moveTo);
 		_idle.PlayerSeenTrigger = PlayerSeenTrigger;
 	}
-	
+
+	public override void UpdateFSM()
+	{
+		
+	}
 }
