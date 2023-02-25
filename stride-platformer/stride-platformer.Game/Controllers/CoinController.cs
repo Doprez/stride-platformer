@@ -1,15 +1,15 @@
+using System.Net.Http.Headers;
 using System.Collections.Specialized;
 using Stride.Core.Collections;
 using Stride.Engine;
 using Stride.Physics;
+using StridePlatformer.Player;
 using StridePlatformer.Services;
 
 namespace Controllers;
 
 public class CoinController : StartupScript
 {
-
-	public GameController GameController { get; set; }
 
 	public PhysicsComponent Trigger;
 
@@ -36,14 +36,15 @@ public class CoinController : StartupScript
 
 		// We need to make sure which collision object is not the Trigger collider
 		// We perform a little check to find the ballCollider 
-		var playerCollider = Trigger == collision.ColliderA ? collision.ColliderB : collision.ColliderA;
+		var collidedEntity = Trigger == collision.ColliderA ? collision.ColliderB : collision.ColliderA;
 
 		if (args.Action == NotifyCollectionChangedAction.Add) 
 		{
 			// When a collision has been added to the collision collection, we know an object has 'entered' our trigger
-			if(playerCollider.Entity.Name == "PlayerCharacter")
+			var playerCollided = collidedEntity.Entity.Get<PlayerController>();
+			if(playerCollided != null)
 			{
-				Entity.DestroyEntity();
+				_gameState.CollectCoin(Entity);
 			}
 		}
 	}
