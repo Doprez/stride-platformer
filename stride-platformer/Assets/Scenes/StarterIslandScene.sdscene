@@ -193,7 +193,7 @@ Hierarchy:
                         Id: f50b190c-1ec7-4986-a26b-fd6c60aa966e
                         Model: 8457b5a3-3d03-4d03-8674-37f1a4dc5427:Models/basic-island-terrain
                         Materials:
-                            db90d6f0c4310b0b6c33c91231098d2d~0: bdfe2f8e-be09-4fca-a087-c982cf140d9c:Materials/TrogMaterial
+                            db90d6f0c4310b0b6c33c91231098d2d~0: 0543c641-fe07-45b3-babe-652e2f99356c:Materials/Material
                     0c47118ed2ba88ebbbb395f00048c6eb: !StaticColliderComponent
                         Id: 97493c64-49e0-4ca8-b20a-04347ffeae2d
                         CanSleep: false

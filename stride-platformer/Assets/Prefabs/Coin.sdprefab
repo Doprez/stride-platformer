@@ -20,7 +20,6 @@ Hierarchy:
                     87b6d7aa0ee92bd822193a46cedf8101: !Controllers.CoinController,StridePlatformer.Game
                         Id: 31f8e563-8dc7-4e6c-a64f-3876cddf0f2c
                         Trigger: !StaticColliderComponent ref!! 005eb9d6-91fc-495c-a762-d0275477c57f
-                        GameController: null
         -   Entity:
                 Id: f206f2c2-ff80-4e48-8099-4901f1103cdb
                 Name: basic-coin

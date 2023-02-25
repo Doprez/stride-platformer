@@ -2663,7 +2663,6 @@ Hierarchy:
                     87b6d7aa0ee92bd822193a46cedf8101: !Controllers.CoinController,StridePlatformer.Game
                         Id: d1b5e391-36a0-4356-9ca2-cb094cba23b9
                         Trigger*: !StaticColliderComponent ref!! 5b05f60c-c55e-499e-8c92-3883bc82c666
-                        GameController: null
             Base:
                 BasePartAsset: 93b199c8-a55c-4c96-9da8-6b1f43a57c2c:Prefabs/Coin
                 BasePartId: b39024fe-b8d7-4404-8c3d-00f90f3f18fe
