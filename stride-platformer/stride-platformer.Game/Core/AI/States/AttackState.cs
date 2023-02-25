@@ -1,10 +1,6 @@
 
-using System.Collections.Specialized;
-using System.Threading.Tasks;
 using Doprez.Stride.AI.FSMs;
-using Stride.Core.Collections;
 using Stride.Engine;
-using Stride.Physics;
 using StridePlatformer.Data;
 
 namespace StridePlatformer.States;
@@ -31,19 +27,19 @@ public class AttackState : FSMState
 		FiniteStateMachine.States.Add((int)EnemyStates.Attack01, this);
 	}
 
-	public override async Task EnterState() 
+	public override void EnterState() 
 	{
-		await Task.Delay(100);
+		
 	}
 
-	public override async Task ExitState() 
+	public override void ExitState() 
 	{
-		await Task.Delay(100);
+		
 	}
 
-	public override async Task UpdateState() 
+	public override void UpdateState() 
 	{
-		await Task.Delay(100);
+		
 	}
 		
 }

@@ -24,23 +24,20 @@ public class IdleState : FSMState
 		FiniteStateMachine.States.Add((int)EnemyStates.Idle, this);
 	}
 
-	public override Task EnterState()
+	public override void EnterState()
 	{
 		_animationComponent.Play("Idle");
 		PlayerSeenTrigger.Collisions.CollectionChanged += CollisionsChanged;
-		return Task.CompletedTask;
 	}
 
-	public override Task ExitState()
+	public override void ExitState()
 	{
 		PlayerSeenTrigger.Collisions.CollectionChanged -= CollisionsChanged;
-		return Task.CompletedTask;
 	}
 
-	public override async Task UpdateState()
+	public override void UpdateState()
 	{
-		//Need to have an awaitable method or else the program gets stuck here and wont render.
-		await Task.Delay(100);
+		
 	}
 
 	private void CollisionsChanged(object sender, TrackingCollectionChangedEventArgs args)
@@ -58,7 +55,7 @@ public class IdleState : FSMState
 			if (playerCollider.Entity.Name == "PlayerCharacter")
 			{
 				var entitycollided = playerCollider.Entity;
-				_moveTo.Target = entitycollided.Transform.WorldMatrix.TranslationVector;
+				_moveTo.Target = entitycollided;
 				FiniteStateMachine.SetCurrentState(_moveTo);
 			}
 		}

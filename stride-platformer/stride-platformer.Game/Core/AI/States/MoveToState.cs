@@ -7,10 +7,12 @@ namespace StridePlatformer.States;
 
 public class MoveToState : FSMState
 {
-    public Vector3 Target;
+    public Entity Target;
 
     private readonly Pathfinder _pathfinder;
 	private readonly AnimationComponent _animationComponent;
+
+    private Vector3 _originalTargetPoint;
 
     public MoveToState(FSM fsm, Pathfinder pathfinder, AnimationComponent animationComponent)
     {
@@ -21,22 +23,25 @@ public class MoveToState : FSMState
 		FiniteStateMachine.States.Add((int)EnemyStates.Walk, this);
     }
 
-    public override async Task EnterState()
+    public override void EnterState()
     {
-        await _pathfinder.SetWaypointAsync(Target);
 		_animationComponent.Play("Walk");
+		_originalTargetPoint = Target.WorldPosition();
+        _pathfinder.SetWaypoint(_originalTargetPoint);
     }
 
-    public override Task ExitState()
+    public override void ExitState()
     {
-        return Task.CompletedTask;
+        
     }
 
-    public override async Task UpdateState()
+    public override void UpdateState()
     {
-        if(!_pathfinder.HasPath)
+        if(!_pathfinder.HasPath || _originalTargetPoint != Target.WorldPosition())
         {
-            await _pathfinder.SetWaypointAsync(Target);
+            _originalTargetPoint = Target.WorldPosition();
+            _pathfinder.SetWaypoint(_originalTargetPoint);
         }
+
     }
 }
