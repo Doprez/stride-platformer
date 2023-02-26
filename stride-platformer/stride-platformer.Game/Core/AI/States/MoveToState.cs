@@ -43,5 +43,10 @@ public class MoveToState : FSMState
             _pathfinder.SetWaypoint(_originalTargetPoint);
         }
 
+        if(Vector3.Distance(FiniteStateMachine.Entity.WorldPosition(), Target.WorldPosition()) < 0.5f)
+        {
+            FiniteStateMachine.SetCurrentState(FiniteStateMachine.GetState((int)EnemyStates.Attack01));
+        }
+
     }
 }
