@@ -12,8 +12,8 @@ public class IdleState : FSMState
 
 	public PhysicsComponent PlayerSeenTrigger;
 
-	private AnimationComponent _animationComponent;
-	private MoveToState _moveTo;
+	private readonly AnimationComponent _animationComponent;
+	private readonly MoveToState _moveTo;
 
 	public IdleState(FSM fsm, AnimationComponent animationComponent, MoveToState moveTo)
 	{
@@ -26,12 +26,14 @@ public class IdleState : FSMState
 
 	public override void EnterState()
 	{
+		PlayerSeenTrigger.Enabled = true;
 		_animationComponent.Play("Idle");
 		PlayerSeenTrigger.Collisions.CollectionChanged += CollisionsChanged;
 	}
 
 	public override void ExitState()
 	{
+		PlayerSeenTrigger.Enabled = false;
 		PlayerSeenTrigger.Collisions.CollectionChanged -= CollisionsChanged;
 	}
 

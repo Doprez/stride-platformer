@@ -16,20 +16,20 @@ public class AttackState : FSMState
 	public Entity EntityToTryAndHit;
 
 	//constructor initiated
-	private PhysicsComponent _attackTrigger;
+	private readonly PhysicsComponent _attackCollider;
 
 	//general private vars
-	private Entity _entitycollided;
-	private AnimationComponent _animationComponent;
-	private PlayerData _playerData;
-	private GameStateService _gameState;
+	private readonly AnimationComponent _animationComponent;
+	private readonly GameStateService _gameState;
 	private PlayingAnimation _playingClip;
-	private float _enemyBaseDamage = 10;
+	private readonly float _enemyBaseDamage = 10;
 
-	public AttackState(FSM fsm, PhysicsComponent attackTrigger, AnimationComponent animationComponent)
+	private const string _attackAnimName = "Attack";
+
+	public AttackState(FSM fsm, PhysicsComponent attackCollider, AnimationComponent animationComponent)
 	{
 		FiniteStateMachine = fsm;
-		_attackTrigger = attackTrigger;
+		_attackCollider = attackCollider;
 		_animationComponent = animationComponent;
 
 		FiniteStateMachine.States.Add((int)EnemyStates.Attack01, this);
@@ -39,20 +39,24 @@ public class AttackState : FSMState
 
 	public override void EnterState()
 	{
-		_playingClip = _animationComponent.Play("Attack");
+		_attackCollider.Enabled = true;
+		_playingClip = _animationComponent.Play(_attackAnimName);
 		_playingClip.RepeatMode = AnimationRepeatMode.PlayOnce;
 
-		_attackTrigger.Collisions.CollectionChanged += CollisionsChanged;
+		_attackCollider.Collisions.CollectionChanged += CollisionsChanged;
 	}
 
 	public override void ExitState()
 	{
-		_attackTrigger.Collisions.CollectionChanged -= CollisionsChanged;
+		//make sure we dont update the collision event when not in the attack state
+		_attackCollider.Collisions.CollectionChanged -= CollisionsChanged;
+		_attackCollider.Enabled = false;
 	}
 
 	public override void UpdateState()
 	{
-		if (!_animationComponent.IsPlaying("Attack"))
+		//once the animation "Attack" has finished playing go back to the move state and chase player
+		if (!_animationComponent.IsPlaying(_attackAnimName))
 		{
 			FiniteStateMachine.SetCurrentState(FiniteStateMachine.GetState((int)EnemyStates.Walk));
 		}
@@ -65,7 +69,7 @@ public class AttackState : FSMState
 
 		// We need to make sure which collision object is not the Trigger collider
 		// We perform a little check to find the ballCollider 
-		var collidedEntity = _attackTrigger == collision.ColliderA ? collision.ColliderB : collision.ColliderA;
+		var collidedEntity = _attackCollider == collision.ColliderA ? collision.ColliderB : collision.ColliderA;
 
 		if (args.Action == NotifyCollectionChangedAction.Add)
 		{
