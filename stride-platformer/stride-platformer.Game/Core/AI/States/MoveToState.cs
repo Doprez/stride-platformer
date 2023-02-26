@@ -31,8 +31,9 @@ public class MoveToState : FSMState
     }
 
     public override void ExitState()
-    {
-        
+	{
+		//reset forces the pathfinder to stop moving the unit
+		_pathfinder.Reset();
     }
 
     public override void UpdateState()
@@ -43,7 +44,7 @@ public class MoveToState : FSMState
             _pathfinder.SetWaypoint(_originalTargetPoint);
         }
 
-        if(Vector3.Distance(FiniteStateMachine.Entity.WorldPosition(), Target.WorldPosition()) < 0.5f)
+        if(Vector3.Distance(FiniteStateMachine.Entity.WorldPosition(), Target.WorldPosition()) < .7f)
         {
             FiniteStateMachine.SetCurrentState(FiniteStateMachine.GetState((int)EnemyStates.Attack01));
         }
