@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Stride.Engine;
+using StridePlatformer.Data;
 
 namespace StridePlatformer.Services;
 
@@ -32,6 +33,11 @@ public class GameStateService
 	public void CollectCoin(Entity coin)
 	{
 		coin.FindRoot().DestroyEntity();
+	}
+
+	public void DamagePlayerHealth(float damage)
+	{
+		Player.Get<PlayerData>().PlayerHealth -= damage;
 	}
 
 }
