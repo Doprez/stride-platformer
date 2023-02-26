@@ -305,7 +305,7 @@ Hierarchy:
                     fa90e855c03e784882620b6429284d50: !ModelNodeLinkComponent
                         Id: 359cf1e3-f8ec-4b81-bff9-5d618aeea024
                         Target: ref!! e8d05f22-cb1e-43fd-a7c6-30959d887371
-                        NodeName: Head_end
+                        NodeName: ForearmRight_end
             Base:
                 BasePartAsset: 58d2f65b-94a7-4456-9286-6c2b14e25f6b:Prefabs/GenericMonster
                 BasePartId: e0bc5767-bd8e-40ce-8b9a-23543c33ba36

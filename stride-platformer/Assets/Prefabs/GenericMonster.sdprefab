@@ -105,4 +105,4 @@ Hierarchy:
                     fa90e855c03e784882620b6429284d50: !ModelNodeLinkComponent
                         Id: 1ce447f1-d01b-44e2-b60b-b564915728b9
                         Target: ref!! 33aab412-f347-4aeb-ba83-6e9ce310f2a7
-                        NodeName: Head_end
+                        NodeName: ForearmRight_end
