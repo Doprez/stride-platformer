@@ -5,7 +5,6 @@ Tags: []
 Hierarchy:
     RootParts:
         - ref!! 555bb3ab-045b-4738-8b38-7e96d553c161
-        - ref!! e0bc5767-bd8e-40ce-8b9a-23543c33ba36
     Parts:
         -   Entity:
                 Id: 0e00434c-ac87-4829-997c-3e480ac61afe
@@ -16,7 +15,8 @@ Hierarchy:
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.70710677, Z: 0.0, W: 0.70710677}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
+                        Children:
+                            dcd48db75645ac655c26ffadecca1bf7: ref!! 8e1fec07-2783-466a-b63f-d7f77d23dad5
                     f979fd95b96b0b9dc170c7b5ceec1b8e: !ModelComponent
                         Id: 33aab412-f347-4aeb-ba83-6e9ce310f2a7
                         Model: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
@@ -68,7 +68,7 @@ Hierarchy:
                     7521d19f8cfb837981446a716bce56da: !.BasicEnemyFSM,StridePlatformer.Game
                         Id: aa6e74ec-bdf7-45c7-8334-373464f4b3e4
                         Player: null
-                        AttackTrigger: !StaticColliderComponent ref!! 10e333e7-df52-4569-a79b-bf6a084a370e
+                        AttackTrigger: !RigidbodyComponent ref!! baaf1c93-51c6-414a-b15c-0a17f508d886
                         PlayerSeenTrigger: !StaticColliderComponent ref!! 15ade9c7-449a-4396-aded-8c66cc73b58e
                         AnimationComponent: ref!! a160e2bb-d566-449b-b89c-7404681947df
                     8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
@@ -82,12 +82,16 @@ Hierarchy:
                 Components:
                     1068bfee60240b5cedfc1fcddc71ea39: !TransformComponent
                         Id: 8e1fec07-2783-466a-b63f-d7f77d23dad5
-                        Position: {X: 0.0, Y: 0.002, Z: 0.0}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 0.01, Y: 0.05, Z: 0.01}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    94d3ee4e6bf3e0ff33a65d875674ea04: !StaticColliderComponent
-                        Id: 10e333e7-df52-4569-a79b-bf6a084a370e
+                    8dbd9956bb98d5932f096c7e11eaa62d: !ModelNodeLinkComponent
+                        Id: 7b38cc57-0a45-4d10-aa37-cab515520b54
+                        Target: ref!! 33aab412-f347-4aeb-ba83-6e9ce310f2a7
+                        NodeName: ForearmRight_end
+                    30e8daedff6c93be615ed9080b17218a: !RigidbodyComponent
+                        Id: baaf1c93-51c6-414a-b15c-0a17f508d886
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -95,14 +99,16 @@ Hierarchy:
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: true
-                        AlwaysUpdateNaviMeshCache: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
                         ColliderShapes:
-                            62d2a1e80e9b2494b4a2e81d89983531: !BoxColliderShapeDesc
+                            981fe68fcd1c588aa28cccf88a0b50a0: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 0.3, Y: 0.1, Z: 0.1}
+                                Size: {X: 0.005, Y: 0.005, Z: 0.005}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    fa90e855c03e784882620b6429284d50: !ModelNodeLinkComponent
-                        Id: 1ce447f1-d01b-44e2-b60b-b564915728b9
-                        Target: ref!! 33aab412-f347-4aeb-ba83-6e9ce310f2a7
-                        NodeName: ForearmRight_end
