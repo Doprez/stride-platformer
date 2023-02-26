@@ -26,7 +26,7 @@ Hierarchy:
                         Animations:
                             479de1166c9d5eab3a28b4b97d8508b6~Idle: c6eac4e9-ea99-4452-9eb4-2f74e127068f:Animations/Trogladyte/Trogladyte_Idle
                             37846c2a6fe21e1c9b1f0767777b00d4~Walk: f979559f-d814-4763-93be-376afb39772c:Animations/Trogladyte/Trogladyte_Walk
-                            9b7530dabbbce42e15462d823c6967a1~Attack: 727ccabd-ee5c-47f2-b635-c05ef5857261:Animations/Trogladyte/Trogladyte_Attack01
+                            9b7530dabbbce42e15462d823c6967a1~Attack: 1b401f74-28e6-44c8-8ffc-1a758df70656:Animations/Trogladyte/Trogladyte_Attack01
         -   Entity:
                 Id: 143cb65f-3fd6-4fdd-ac74-66adb1a50e0b
                 Name: PlayerSeenTrigger

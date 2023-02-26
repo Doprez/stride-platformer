@@ -1,5 +1,5 @@
 !Animation
-Id: 727ccabd-ee5c-47f2-b635-c05ef5857261
+Id: 1b401f74-28e6-44c8-8ffc-1a758df70656
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Source: !file ../../../Resources/Animations/Trogladyte/Trogladyte_Attack01.fbx
@@ -16,4 +16,4 @@ PreviewModel: 6d45338e-d4a3-40f3-85b0-ca777e1ce6d7:Models/Trogladyte/Trogladyte
 AnimationTimeMinimum: 0:00:00:00.0000000
 AnimationTimeMaximum: 0:00:00:01.8333400
 ~SourceHashes:
-    6e305ec0357159a9e11fd06236055996~../../../Resources/Animations/Trogladyte/Trogladyte_Attack01.fbx: 6a6d6ac49c2d0d51df026e68f142bb5a
+    a745f4bdd6f093fa6858b0d166f093c1~../../../Resources/Animations/Trogladyte/Trogladyte_Attack01.fbx: 6a6d6ac49c2d0d51df026e68f142bb5a
