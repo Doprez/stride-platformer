@@ -6,6 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Doprez.Stride" Version="1.1.1" />
+    <PackageReference Include="Myra.Stride" Version="1.4.5" />
     <PackageReference Include="Stride.Core" Version="4.1.0.1805" PrivateAssets="contentfiles;analyzers" />
     <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1805" PrivateAssets="contentfiles;analyzers" IncludeAssets="build" />
     <PackageReference Include="Stride.Engine" Version="4.1.0.1805" PrivateAssets="contentfiles;analyzers" />

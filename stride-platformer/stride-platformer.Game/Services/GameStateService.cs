@@ -37,7 +37,7 @@ public class GameStateService
 
 	public void DamagePlayerHealth(float damage)
 	{
-		Player.Get<PlayerData>().PlayerHealth -= damage;
+		Player.Get<PlayerData>().RemovePlayerHealth(damage);
 	}
 
 }
