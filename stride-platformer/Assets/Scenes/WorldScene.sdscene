@@ -32,8 +32,8 @@ Hierarchy:
                         AttackTrigger: !RigidbodyComponent ref!! 70fd1583-f203-454d-a559-9ebea2687af1
                         PlayerSeenTrigger: !StaticColliderComponent ref!! 0b7bd536-69ef-4213-86ae-d2e9ed0d8039
                         AnimationComponent: ref!! 53ad21a1-1cdf-4ea4-965c-5fcd2da194a4
-                    8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
-                        Id: c3590312-8f62-48d3-8155-70129fc4d162
+                    1a5b7c66953e2568ecbe109de3aa2dc2: !Navigation.AsyncPathfinder,StridePlatformer.Game
+                        Id: 2a49e004-a752-489c-8cc9-b0caee9f04df
                         TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
                         MovementSpeed: 3.0
                         NavGroupName: GenericMonster
@@ -168,7 +168,6 @@ Hierarchy:
                             23fe5ceb28bd9649fa594f451bbef24b: Space
                     a315c0e37a0795518798ecc8a83c2f06: !StridePlatformer.Data.PlayerData,StridePlatformer.Game
                         Id: 44935442-1b8c-40ba-a0d2-86e9c3440416
-                        PlayerHealth: 100.0
             Base:
                 BasePartAsset: f931de6d-5e23-4325-a9e7-96bc4fa9d51f:Prefabs/StrideBotPlayer
                 BasePartId: e62448ca-d27a-4f21-abcc-10458549c71d

@@ -71,8 +71,8 @@ Hierarchy:
                         AttackTrigger: !RigidbodyComponent ref!! baaf1c93-51c6-414a-b15c-0a17f508d886
                         PlayerSeenTrigger: !StaticColliderComponent ref!! 15ade9c7-449a-4396-aded-8c66cc73b58e
                         AnimationComponent: ref!! a160e2bb-d566-449b-b89c-7404681947df
-                    8123e144a92c37e98bd730dedfd4f3cf: !.Pathfinder,StridePlatformer.Game
-                        Id: 2d8ee278-6e96-44a6-a7f8-0ba134427a11
+                    1a5b7c66953e2568ecbe109de3aa2dc2: !Navigation.AsyncPathfinder,StridePlatformer.Game
+                        Id: e2e70cdf-ddc5-4c1f-9209-4d79f4234f76
                         TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
                         MovementSpeed: 3.0
                         NavGroupName: GenericMonster

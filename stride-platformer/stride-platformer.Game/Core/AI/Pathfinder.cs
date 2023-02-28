@@ -6,8 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+namespace Navigation;
+
 [ComponentCategory("Navigation")]
-public class Pathfinder : AsyncScript
+public class AsyncPathfinder : AsyncScript
 {
 
 	public float MovementSpeed { get; set; } = 10;
@@ -25,6 +27,26 @@ public class Pathfinder : AsyncScript
 		get
 		{
 			return Vector3.Distance(Entity.Transform.WorldMatrix.TranslationVector, TargetPosition);
+		}
+	}
+
+	/// <summary>
+	/// not the most efficient method to use per frame but logically is better than DistanceToTarget
+	/// </summary>
+	public float GetCurrentPathDistance
+	{
+		get
+		{
+			float distance = 0;
+			if(_waypoints.Count == 0)
+			{
+				return distance;
+			}
+			for (int i = 0; i < _waypoints.Count - 1; i++)
+			{
+				distance += Vector3.Distance(_waypoints[i], _waypoints[i+1]);
+			}
+			return distance;
 		}
 	}
 
@@ -118,7 +140,6 @@ public class Pathfinder : AsyncScript
 		if (_waypoints.Count > 0)
 		{
 			var test = Entity.GetYAngleToTarget(_waypoints[waypointIndex]);
-			//DebugText.Print($"{MathHelper.RadiansToDegrees(test)}", new Int2(200, 200));
 			Entity.Transform.Rotation = Quaternion.RotationY(-test);
 		}
 	}
