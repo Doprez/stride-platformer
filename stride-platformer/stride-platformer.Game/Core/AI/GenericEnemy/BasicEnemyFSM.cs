@@ -1,14 +1,9 @@
 using System;
-using System.Collections.Specialized;
-using System.Threading.Tasks;
 using Doprez.Stride.AI.FSMs;
-using Stride.Animations;
 using Stride.Core;
-using Stride.Core.Collections;
 using Stride.Engine;
-using Stride.Physics;
-using StridePlatformer.Data;
 using StridePlatformer.States;
+using Navigation;
 
 public class BasicEnemyFSM : FSM
 {
@@ -26,7 +21,7 @@ public class BasicEnemyFSM : FSM
 	[DataMember(20)]
 	public AnimationComponent AnimationComponent { get; set; }
 
-	private Pathfinder _pathfinder;
+	private AsyncPathfinder _pathfinder;
 
 	//States
 	private MoveToState _moveTo;
@@ -36,7 +31,7 @@ public class BasicEnemyFSM : FSM
 
 	public override void Start()
 	{
-		_pathfinder = Entity.Get<Pathfinder>();
+		_pathfinder = Entity.Get<AsyncPathfinder>();
 
 		if(_pathfinder == null)
 			throw new InvalidOperationException("The Pathfinder component is not set");
