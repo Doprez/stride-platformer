@@ -1,7 +1,7 @@
-using System.Threading.Tasks;
 using Doprez.Stride.AI.FSMs;
 using Stride.Core.Mathematics;
 using Stride.Engine;
+using Navigation;
 
 namespace StridePlatformer.States;
 
@@ -9,12 +9,12 @@ public class MoveToState : FSMState
 {
     public Entity Target;
 
-    private readonly Pathfinder _pathfinder;
+    private readonly AsyncPathfinder _pathfinder;
 	private readonly AnimationComponent _animationComponent;
 
     private Vector3 _originalTargetPoint;
 
-    public MoveToState(FSM fsm, Pathfinder pathfinder, AnimationComponent animationComponent)
+    public MoveToState(FSM fsm, AsyncPathfinder pathfinder, AnimationComponent animationComponent)
     {
         FiniteStateMachine = fsm;
         _pathfinder = pathfinder;
@@ -44,7 +44,7 @@ public class MoveToState : FSMState
             _pathfinder.SetWaypoint(_originalTargetPoint);
         }
 
-        if(Vector3.Distance(FiniteStateMachine.Entity.WorldPosition(), Target.WorldPosition()) < .7f)
+        if(_pathfinder.GetCurrentPathDistance < .7f)
         {
             FiniteStateMachine.SetCurrentState(FiniteStateMachine.GetState((int)EnemyStates.Attack01));
         }
