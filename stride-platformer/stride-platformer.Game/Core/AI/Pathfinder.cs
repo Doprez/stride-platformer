@@ -72,7 +72,10 @@ public class AsyncPathfinder : AsyncScript
 			await Script.NextFrame();
 		}
 	}
-
+	
+	/// <summary>
+	/// Stops the pathfinder and resets some base values
+	/// </summary>
 	public void Reset()
 	{
 		ClearGoal();
