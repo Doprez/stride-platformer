@@ -79,20 +79,19 @@ Hierarchy:
                         Enabled*: true
                         Model*: d9160e1a-02ea-40a1-b76a-9c36c51d621d:Models/StrideBot/stride-bot
                         Materials: {}
-                    978eabfaac453f4d9375495d32bc299f: !StridePlatformer.Player.AnimationController,StridePlatformer.Game
-                        Id: 7786454c-ce00-4b99-b1b5-ba417c45f21a
-                        AnimationComponent: ref!! ecbee639-af2e-476b-96a1-594c0111ec4b
-                        AnimationIdle*: 907742b6-2a2e-47db-8b2d-5b344c701afc:Animations/StrideBot/stride-bot_Idle
-                        AnimationWalk*: 5df41521-bafa-49f0-aeda-d2401286bdc9:Animations/StrideBot/stride-bot_Walk
-                        AnimationRun*: 549c8e60-a71f-40e4-9b66-6fac06606b2c:Animations/StrideBot/stride-bot_Run
-                        AnimationJumpStart*: ef6188bc-e952-4c4c-9e5d-27ffea88636b:Animations/StrideBot/stride-bot_Jump
-                        AnimationJumpMid*: 5df41521-bafa-49f0-aeda-d2401286bdc9:Animations/StrideBot/stride-bot_Walk
-                        AnimationJumpEnd*: 9506ad85-7a32-4381-93ef-6f070dfcccd9:Animations/StrideBot/stride-bot_Land
-                        WalkThreshold: 0.25
-                        TimeFactor: 1.0
                     5847b2c0adfcf347a100f94d96c5d325: !AnimationComponent
                         Id: ecbee639-af2e-476b-96a1-594c0111ec4b
-                        Animations: {}
+                        Animations:
+                            acdb0dd17802087d9b750c63c784a0e8*~Run: 549c8e60-a71f-40e4-9b66-6fac06606b2c:Animations/StrideBot/stride-bot_Run
+                            4dda8534ef4972bb694292ec6f39dc9e*~Idle: 907742b6-2a2e-47db-8b2d-5b344c701afc:Animations/StrideBot/stride-bot_Idle
+                            48e6efda31a03a3fbe02bf7ded8675c4*~Jump: ef6188bc-e952-4c4c-9e5d-27ffea88636b:Animations/StrideBot/stride-bot_Jump
+                            86d258827f9bd3c1baffebd1969e431f*~Land: 9506ad85-7a32-4381-93ef-6f070dfcccd9:Animations/StrideBot/stride-bot_Land
+                            71fe8617d40571a12f9f984f282d5185*~Attack: 56ffcc8b-0c2c-4eb9-b634-e68d96b2bca8:Animations/StrideBot/stride-bot_Attack
+                    579670a962ab3c0598e8a5615f04fbf6*: !StridePlatformer.Player.PlayerAnimation,StridePlatformer.Game
+                        Id: cd6c7d2e-8dae-4072-bae1-4cd672c1d28b
+                        Character: ref!! 48bf8876-173d-43e7-a841-03a3d2b1fceb
+                        Animations: ref!! ecbee639-af2e-476b-96a1-594c0111ec4b
+                    978eabfaac453f4d9375495d32bc299f: ~(Deleted)
             Base:
                 BasePartAsset: ed083a2d-26ca-4697-8c57-b4eab2cc2dd9:Prefabs/PlayerCharacter
                 BasePartId: 8f8e017e-69ed-45d7-97d7-a30a67bbb949
@@ -154,7 +153,6 @@ Hierarchy:
                             23fe5ceb28bd9649fa594f451bbef24b: Space
                     a315c0e37a0795518798ecc8a83c2f06*: !StridePlatformer.Data.PlayerData,StridePlatformer.Game
                         Id: 38376b87-b944-4454-9f5a-98ec5094e5c0
-                        PlayerHealth: 100.0
             Base:
                 BasePartAsset: ed083a2d-26ca-4697-8c57-b4eab2cc2dd9:Prefabs/PlayerCharacter
                 BasePartId: 4ae2029d-5e38-408b-bedc-ef4a46b8ba35
