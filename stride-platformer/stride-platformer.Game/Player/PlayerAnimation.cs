@@ -71,13 +71,12 @@ public class PlayerAnimation : SyncScript
 	{
 		// State control
 		runSpeedEvent.TryReceive(out _runSpeed);
-		bool isGroundedNewValue;
-		isGroundedEvent.TryReceive(out isGroundedNewValue);
+		isGroundedEvent.TryReceive(out bool isGroundedNewValue);
 		if (_isGrounded != isGroundedNewValue)
 		{
 			_currentTime = 0;
 			_isGrounded = isGroundedNewValue;
-			_state = (_isGrounded) ? AnimationState.Landing : AnimationState.Jumping;
+			_state = _isGrounded ? AnimationState.Landing : AnimationState.Jumping;
 		}
 
 		if(_isGrounded && _runSpeed == 0)
@@ -97,8 +96,6 @@ public class PlayerAnimation : SyncScript
 			case AnimationState.Jumping: PlayJump(); break;
 			case AnimationState.Landing: PlayLand(); break;
 		}
-
-		_runSpeed = 0;
 	}
 }
 
