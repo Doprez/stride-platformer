@@ -126,16 +126,16 @@ namespace StridePlatformer.Player
             Vector3 newMoveDirection;
             moveDirectionEvent.TryReceive(out newMoveDirection);
 
-            // Allow very simple inertia to the character to make animation transitions more fluid
-            moveDirection = moveDirection*0.85f + newMoveDirection *0.15f;
+            //send the input to the animation event
+			RunSpeedEventKey.Broadcast(newMoveDirection.Length());
+
+			// Allow very simple inertia to the character to make animation transitions more fluid
+			moveDirection = moveDirection*0.85f + newMoveDirection *0.15f;
 
             character.SetVelocity(moveDirection * speed);
 
-            // Broadcast speed as per cent of the max speed
-            RunSpeedEventKey.Broadcast(moveDirection.Length());
-
             // Character orientation
-            if (moveDirection.Length() > 0.001)
+            if (moveDirection.Length() > 0.1)
             {
                 yawOrientation = MathUtil.RadiansToDegrees((float) Math.Atan2(-moveDirection.Z, moveDirection.X) + MathUtil.PiOverTwo);
             }

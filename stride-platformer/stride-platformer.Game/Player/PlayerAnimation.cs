@@ -69,9 +69,11 @@ public class PlayerAnimation : SyncScript
 
 	public override void Update()
 	{
+
 		// State control
 		runSpeedEvent.TryReceive(out _runSpeed);
 		isGroundedEvent.TryReceive(out bool isGroundedNewValue);
+
 		if (_isGrounded != isGroundedNewValue)
 		{
 			_currentTime = 0;
@@ -84,7 +86,7 @@ public class PlayerAnimation : SyncScript
 			_state = AnimationState.Idle;
 		}
 
-		if (_isGrounded && _runSpeed > 0.001f)
+		if (_isGrounded && _runSpeed > 0.1f)
 		{
 			_state = AnimationState.Walking;
 		}
