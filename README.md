@@ -1,5 +1,5 @@
 # stride-platformer
-a basic platformer I will use for Stride tutorials.
+This is a basic platformer I will use for Stride tutorials.
 
 
 # Dependancies
